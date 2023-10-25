@@ -6,10 +6,11 @@ import { NavModule } from './nav/nav.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from './header/header.module';
 import { RecentblogsModule } from './recentblogs/recentblogs.module';
+import { AllBlogPostsModule } from './all-blog-posts/all-blog-posts.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -17,7 +18,8 @@ import { RecentblogsModule } from './recentblogs/recentblogs.module';
     NavModule,
     BrowserAnimationsModule,
     HeaderModule,
-    RecentblogsModule
+    RecentblogsModule,
+    AllBlogPostsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
