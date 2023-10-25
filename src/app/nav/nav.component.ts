@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DarkmodeService } from './darkmode.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
  
 })
 export class NavComponent {
+  constructor( private darkmode:DarkmodeService) {}
+
+  switchTheme() {
+    this.darkmode.changeTheme();
+  }
+
 color:string = "#000000"
 }
