@@ -5,3 +5,8 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Inter, sans-serif; }
+body.dark-theme {
+    background-color: #090D1F;
+    color:white;
+    
+}
