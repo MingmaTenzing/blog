@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ContentfulService } from '../contentful/contentful.service';
+import { TypeBlogFields } from '../contentful/types';
 
 
 @Component({
@@ -6,6 +8,11 @@ import { Component } from '@angular/core';
   templateUrl: './recentblogs.component.html',
   styleUrls: ['./recentblogs.component.css']
 })
-export class RecentblogsComponent {
+export class RecentblogsComponent implements OnInit {
+  constructor( private blogservice:ContentfulService){}
+  
+  ngOnInit(): void {
+      this.blogservice.getBlogs();
+  }
 
 }
