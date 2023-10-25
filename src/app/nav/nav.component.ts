@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
  
 })
 export class NavComponent {
-color:string = "#FFC0CB"
+color:string = "#000000"
 }
