@@ -1,29 +1,41 @@
-<div  class=" p-4 md:py-8 justify-between flex  items-center" >
-   <div>
-       <p class="font-semibold text-lg ">MTS</p>
-
-   </div>
-<div class=" md:hidden">
-    <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-
-</div>
-<div class=" hidden md:flex items-center space-x-6 text-lg">
+<div class="p-4 md:py-8 justify-between flex items-center">
+  <div>
+    <p class="font-semibold text-lg">MTS</p>
+  </div>
+  <div class="md:hidden">
+    <button
+      mat-icon-button
+      color=""
+      (click)="changeModalState()"
+      aria-label="Example icon button with a menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div class="hidden md:flex items-center space-x-6 text-lg">
     <p>Blog</p>
     <p>Projects</p>
     <p>About</p>
     <p>Newsletter</p>
-    
-     
-            <mat-slide-toggle
-              (click)="switchTheme()"
-                [color]="'#000000'"
-               >
-              
-            </mat-slide-toggle>
-        
-    
 
-</div>
+    <mat-slide-toggle (click)="switchTheme()" [color]="'#000000'">
+    </mat-slide-toggle>
+  </div>
+
+  <div *ngIf="isModalOpen" [@fadeInDownOnEnter]  [@fadeOutUpOnLeave] class="absolute top-0 bg-[#121212] text-white h-[100vh] left-0 w-full">
+    <div class="flex space-y-8 flex-col items-center justify-center h-full">
+      <p class=" text-lg">Blog</p>
+      <p class=" text-lg">Projects</p>
+      <p class=" text-lg">About</p>
+      <p class=" text-lg">Newsletter</p>
+
+      <mat-slide-toggle (click)="switchTheme()" [color]="'#000000'">
+      </mat-slide-toggle>
+
+      
+    </div>
+    <span class=" absolute bottom-10 right-1/2 ">
+      <p class=" text-2xl uppercase" (click)="changeModalState()">x</p>
+    </span>
+  </div>
 </div>
