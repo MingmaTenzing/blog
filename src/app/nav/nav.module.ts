@@ -21,5 +21,5 @@ import {MatCardModule} from '@angular/material/card';
 })
 export class NavModule {
 
-  color:string = "#242424"
+
 }
