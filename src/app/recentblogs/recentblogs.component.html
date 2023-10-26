@@ -1,18 +1,20 @@
+
+
 <div class="p-4 md:p-6 space-y-8">
   <p class="py-4 text-2xl font-semibold">Recent Blog Posts</p>
-  <div class="space-y-8 lg:space-y-0 lg:space-x-8 lg:flex">
-    <div class="space-y-4 lg:w-1/2">
+
+  <div *ngIf="blog" class="space-y-8 lg:space-y-0 lg:space-x-8 lg:flex">
+    <div   class="space-y-4 lg:w-1/2">
       <div>
         <img
           class="md:h-[228px] object-cover object-center md:w-full"
-          src="https://www.visioncabling.com.au/uploads/images/case-studies/Microsoft/_1400xAUTO_fit_center-center_80_none/DSC_3667.jpg"
+          src="{{blog[0].mainImage}}"
         />
       </div>
       <div class="space-y-3">
-        <p class="font-semibold text-purple-text">Sunday, 1 Jan 2023</p>
+        <p class="font-semibold text-purple-text">{{blog[0]._createdAt | date}}</p>
         <h2 class="text-2xl font-bold">
-          Github Copilot Event at St.Georges Terrace
-        </h2>
+{{blog[0].title}}        </h2>
         <p class="text-gray-text">
           How do you create compelling presentations that wow your collegaues and
           impress your managers
@@ -39,14 +41,13 @@
         <div>
           <img
             class="md:min-w-[320px] md:h-[200px] object-cover"
-            src="https://live.staticflickr.com/65535/53247196047_f5dcbb7f10_z.jpg"
+            src={{blog[1].mainImage}}
           />
         </div>
         <div class="space-y-3">
-          <p class="font-semibold text-purple-text">Sunday, 1 Jan 2023</p>
+          <p class="font-semibold text-purple-text">{{blog[1]._createdAt | date}}</p>
           <h2 class="text-2xl font-bold">
-            Github Copilot Event at St.Georges Terrace
-          </h2>
+{{blog[1].title}}          </h2>
           <p class="text-gray-text">
             How do you create compelling presentations that wow your collegaues and
             impress your managers
@@ -70,14 +71,13 @@
         <div>
           <img
             class="md:min-w-[320px] md:h-[200px] object-cover"
-            src="https://www.visioncabling.com.au/uploads/images/case-studies/Microsoft/_1400xAUTO_fit_center-center_80_none/DSC_3667.jpg"
+            src={{blog[2].mainImage}}
           />
         </div>
         <div class="space-y-3">
-          <p class="font-semibold text-purple-text">Sunday, 1 Jan 2023</p>
+          <p class="font-semibold text-purple-text">{{blog[2]._createdAt}}</p>
           <h2 class="text-2xl font-bold">
-            Github Copilot Event at St.Georges Terrace
-          </h2>
+{{blog[2].title}}          </h2>
           <p class="text-gray-text">
             How do you create compelling presentations that wow your collegaues and
             impress your managers
@@ -108,14 +108,13 @@
     <div class="lg:w-1/2">
       <img
         class="md:h-[228px] object-cover object-center md:w-full"
-        src="https://pbs.twimg.com/profile_banners/1713058376589209601/1697266268/1500x500"
+        src={{blog[3].mainImage}}
       />
     </div>
     <div class="space-y-3 lg:w-1/2 ">
-      <p class="font-semibold text-purple-text">Sunday, 1 Jan 2023</p>
+      <p class="font-semibold text-purple-text">{{blog[3]._createdAt | date}}</p>
       <h2 class="text-2xl font-bold">
-        Github Copilot Event at St.Georges Terrace
-      </h2>
+{{blog[3].title}}      </h2>
       <p class="text-gray-text">dsfdsfds</p>
       <div class="flex space-x-3 items-center">
         <div
