@@ -4,7 +4,7 @@
   <p class="py-4 text-2xl font-semibold">Recent Blog Posts</p>
 
   <div *ngIf="blog$ | async as blog" class="space-y-8 lg:space-y-0 lg:space-x-8 lg:flex">
-    <div   class="space-y-4 lg:w-1/2">
+    <div [routerLink]="['/post', blog[0].slug]"    class="space-y-4 lg:w-1/2">
       <div>
         <img
           class="md:h-[228px] object-cover object-center md:w-full"
@@ -37,7 +37,7 @@
 
     <!-- THE CODE BELOW IS FOR THE OTHER BLOG POSTS Treat it as a dummy component later once you have data and use ng for to map the data -->
     <div class="space-y-8 lg:w-1/2">
-      <div class="space-y-4 md:flex md:space-y-0 md:space-x-6">
+      <div  [routerLink]="['/post', blog[1].slug]" class="space-y-4 md:flex md:space-y-0 md:space-x-6">
         <div>
           <img
             class="md:min-w-[320px] md:h-[200px] object-cover"
@@ -105,7 +105,7 @@
 
   <!-- RECENT BLOGS LAST POST -->
   <div *ngIf="blog$ | async as blog" class="space-y-4 lg:flex lg:space-x-8 lg:space-y-0">
-    <div class="lg:w-1/2">
+    <div  class="lg:w-1/2">
       <img
         class="md:h-[228px] object-cover object-center md:w-full"
         src={{blog[3].mainImage}}

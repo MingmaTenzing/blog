@@ -2,7 +2,10 @@ import { PortableTextBlock } from '@portabletext/types';
 
 
 export interface Blog {
-author: string;
+author: [
+    name: string,
+    image: string,
+];
 categories: string[];
 mainImage: string;
 slug: string;

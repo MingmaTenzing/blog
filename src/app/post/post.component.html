@@ -1,4 +1,22 @@
-<p>post works!</p>
+<div class="p-4 md:p-6" *ngIf="post$ | async as post">
 
+<div class=" space-y-3" >
+    <p class="text-purple-text font-semibold">{{post._createdAt | date}}</p>
+    <h1 class=" font-bold text-4xl">{{post.title}}</h1>
+    <img class=" rounded-lg" src="{{post.mainImage}}" />
+    <div class=" flex space-x-2 items-center">
+        <img class=" rounded-full w-10 h-10 object-cover" src="{{post.author[1]}}" />
 
-<p>lksdjf ldsflkdsj lkadsjlkf jsdlk fjladsf</p>
+        <p class=" font-light">{{post.author[0]}}</p>
+    </div>
+
+    <div
+      *ngIf="post.body"
+      class=""
+      [innerHTML]="post.body | portableText " ></div>
+</div>
+
+    
+
+    
+</div>

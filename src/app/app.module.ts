@@ -9,9 +9,11 @@ import { HeaderModule } from './header/header.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { HomeModule } from './home/home.module';
+import { SanityImagePipe } from './sanity/sanity-image.pipe';
+import { PortableTextPipe } from './sanity/portable-text.pipe';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent ],
   imports: [
     NavModule,
     BrowserAnimationsModule,
@@ -23,6 +25,7 @@ import { HomeModule } from './home/home.module';
     HomeModule
   ],
   providers: [],
+
   bootstrap: [AppComponent],
 })
 export class AppModule {}

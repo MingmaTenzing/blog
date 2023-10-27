@@ -6,28 +6,20 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-recentblogs',
   templateUrl: './recentblogs.component.html',
-  styleUrls: ['./recentblogs.component.css']
+  styleUrls: ['./recentblogs.component.css'],
 })
 export class RecentblogsComponent implements OnInit {
-
-  constructor ( private sanityService: SanityService) {
-
-  }
-blog$! : Observable<Blog[]>;
+  constructor(private sanityService: SanityService) {}
+  blog$!: Observable<Blog[]>;
   loading: boolean = false;
 
-  
   ngOnInit(): void {
-   
-   
-  this.blog$ = this.sanityService.getAllPosts();  
-   
+    this.blog$ = this.sanityService.getAllPosts();
+    
   }
 
   
 
-  
-  
   // async getPosts(): Promise<Blog[]>  {
   //   this.loading = true;
   //    this.blog = await this.sanityService.getAllPosts();
@@ -37,5 +29,4 @@ blog$! : Observable<Blog[]>;
   //    return this.blog;
 
   // }
-
 }
