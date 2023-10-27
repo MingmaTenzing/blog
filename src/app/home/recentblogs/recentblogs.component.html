@@ -3,7 +3,7 @@
 <div class="p-4 md:p-6 space-y-8">
   <p class="py-4 text-2xl font-semibold">Recent Blog Posts</p>
 
-  <div *ngIf="blog" class="space-y-8 lg:space-y-0 lg:space-x-8 lg:flex">
+  <div *ngIf="blog$ | async as blog" class="space-y-8 lg:space-y-0 lg:space-x-8 lg:flex">
     <div   class="space-y-4 lg:w-1/2">
       <div>
         <img
@@ -104,7 +104,7 @@
 
 
   <!-- RECENT BLOGS LAST POST -->
-  <div class="space-y-4 lg:flex lg:space-x-8 lg:space-y-0">
+  <div *ngIf="blog$ | async as blog" class="space-y-4 lg:flex lg:space-x-8 lg:space-y-0">
     <div class="lg:w-1/2">
       <img
         class="md:h-[228px] object-cover object-center md:w-full"

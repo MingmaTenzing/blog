@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { createClient, ClientConfig, SanityClient } from '@sanity/client';
 import { SanityImageSource } from '@sanity/image-url/lib/types/types';
 import { Blog } from './types';
+import { from } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -26,8 +27,20 @@ export class SanityService {
 
 
 
-  async getAllPosts():Promise<Blog[]> {
-    return await this.sanityClient().fetch(`*[_type == "post"]{
+  // async getAllPosts():Promise<Blog[]> {
+  //   return await this.sanityClient().fetch(`*[_type == "post"]{
+  //     _id,
+  //     _createdAt,
+  //     title,
+  //     "slug": slug.current,
+  //     "mainImage": mainImage.asset->url,
+  //     "categories": categories[]->title,
+  //       "author": author -> name,
+  //     body
+  //   }`)
+  // }
+   getAllPosts(){
+   const promise = this.sanityClient().fetch(`*[_type == "post"]{
       _id,
       _createdAt,
       title,
@@ -37,5 +50,6 @@ export class SanityService {
         "author": author -> name,
       body
     }`)
+    return from(promise)
   }
 }
