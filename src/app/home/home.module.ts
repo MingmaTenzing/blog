@@ -10,7 +10,13 @@ import { HeaderModule } from '../header/header.module';
 
 @NgModule({
   declarations: [HomeComponent, AllBlogPostsComponent, RecentblogsComponent],
-  imports: [CommonModule, RouterModule, AppRoutingModule, BlogContainerModule, HeaderModule ],
+  imports: [
+    CommonModule,
+    RouterModule,
+    AppRoutingModule,
+    BlogContainerModule,
+    HeaderModule,
+  ],
   exports: [],
 })
 export class HomeModule {}
