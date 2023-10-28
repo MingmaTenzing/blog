@@ -12,9 +12,12 @@ module.exports = {
         'pink-text': '#C11574',
         'gray-text':'#667085'
 
-      }
+      },
+     
     },
   },
   plugins: [],
+  important:true
+
 }
 
