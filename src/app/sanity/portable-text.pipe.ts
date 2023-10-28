@@ -12,7 +12,7 @@ export class PortableTextPipe implements PipeTransform {
   components: PortableTextComponents = {
     types: {
       image: ({ value }: { value: string }) =>
-        '<img src="' + this.sanityImagePipe.transform(value, 900) + '" />',
+        '<img loading="lazy" src="' + this.sanityImagePipe.transform(value, 900) + '" />',
     },
   };
   transform(value: PortableTextBlock[]): string {

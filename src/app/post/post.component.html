@@ -1,22 +1,23 @@
 <div class="p-4 md:p-6" *ngIf="post$ | async as post">
+  <div class="space-y-3">
+    <p class="text-purple-text font-semibold">{{ post._createdAt | date }}</p>
+    <h1 class="font-bold text-3xl">{{ post.title }}</h1>
+    <img class="rounded-lg md:h-[400px] md:w-full object-cover md:object-center" src="{{ post.mainImage }}" />
+    <div class="flex space-x-2 items-center">
+      <div>
+        <img
+          class="rounded-full w-10 h-10 object-cover"
+          src="{{ post.author[1] }}"
+        />
+      </div>
 
-<div class=" space-y-3" >
-    <p class="text-purple-text font-semibold">{{post._createdAt | date}}</p>
-    <h1 class=" font-bold text-6xl">{{post.title}}</h1>
-    <img class=" rounded-lg" src="{{post.mainImage}}" />
-    <div class=" flex space-x-2 items-center">
-        <img class=" rounded-full w-10 h-10 object-cover" src="{{post.author[1]}}" />
-
-        <p class=" font-light">{{post.author[0]}}</p>
+      <p class="font-light">{{ post.author[0] }}</p>
     </div>
 
     <div
       *ngIf="post.body"
-      class=""
-      [innerHTML]="post.body | portableText " ></div>
-</div>
-
-    
-
-    
+      class=" py-10 text-base md:text-lg"
+      [innerHTML]="post.body | portableText"
+    ></div>
+  </div>
 </div>
