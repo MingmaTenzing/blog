@@ -4,8 +4,9 @@ import { NavComponent } from './nav.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSlideToggleModule, _MatSlideToggleRequiredValidatorModule } from '@angular/material/slide-toggle';
 import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [NavComponent],
@@ -15,6 +16,9 @@ import {MatCardModule} from '@angular/material/card';
     MatIconModule,
     MatDividerModule,
     MatButtonModule,
+    _MatSlideToggleRequiredValidatorModule,
+
+    FormsModule,
     MatCardModule
   ],
   exports: [NavComponent],

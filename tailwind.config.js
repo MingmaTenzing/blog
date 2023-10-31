@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{html,ts}",
+    "./src/app/**/*.{html,ts}",
 
   ],
   theme: {
@@ -12,9 +12,14 @@ module.exports = {
         'pink-text': '#C11574',
         'gray-text':'#667085'
 
-      }
+      },
+     
     },
   },
   plugins: [],
+  important:true
+
 }
+
+
 

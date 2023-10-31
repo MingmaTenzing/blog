@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Blog } from 'src/app/sanity/types';
 
 @Component({
   selector: 'app-blog-container',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-container.component.css']
 })
 export class BlogContainerComponent {
+  @Input() post!:Blog;
 
 }

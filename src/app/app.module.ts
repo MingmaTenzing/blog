@@ -5,23 +5,27 @@ import { AppComponent } from './app.component';
 import { NavModule } from './nav/nav.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from './header/header.module';
-import { RecentblogsModule } from './recentblogs/recentblogs.module';
-import { AllBlogPostsModule } from './all-blog-posts/all-blog-posts.module';
+
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { HomeModule } from './home/home.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
     NavModule,
     BrowserAnimationsModule,
     HeaderModule,
-    RecentblogsModule,
-    AllBlogPostsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    BrowserModule,
+    RouterModule,
+    FormsModule,
+    HomeModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

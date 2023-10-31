@@ -1,12 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*{
+    font-family: 'Inter', sans-serif !important;
+}
+
+body.dark-theme{
+    background-color: #090D1F;
+    color: white;
+}
+
+body { margin: 0}
 
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Inter, sans-serif; }
-body.dark-theme {
-    background-color: #090D1F;
-    color:white;
-    
-}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
