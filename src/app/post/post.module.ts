@@ -12,11 +12,12 @@ import { SanityImagePipe } from '../sanity/sanity-image.pipe';
     PostComponent,
     SanityImagePipe,
     PortableTextPipe
+    
   ],
   imports: [
     CommonModule,
     PostRoutingModule],
     providers:[SanityImagePipe, PortableTextPipe],
-  exports:[]
+  exports:[PortableTextPipe, SanityImagePipe]
 })
 export class PostModule { }

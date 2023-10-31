@@ -1,8 +1,8 @@
-<div class="p-4 md:p-6 md:flex md:justify-between md:flex-wrap">
-  <app-blog-container></app-blog-container>
-  <app-blog-container></app-blog-container>
-  <app-blog-container></app-blog-container>
-  <app-blog-container></app-blog-container>
-  <app-blog-container></app-blog-container>
-  <app-blog-container></app-blog-container>
+<div *ngIf="post$ | async as blog">
+  <div
+    *ngFor="let post of blog"
+    class="p-4 md:p-6 md:flex md:justify-between md:flex-wrap"
+  >
+    <app-blog-container [post]="post"></app-blog-container>
+  </div>
 </div>

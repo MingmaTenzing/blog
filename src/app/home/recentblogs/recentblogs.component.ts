@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
 import { SanityService } from 'src/app/sanity/sanity.service';
 import { Blog } from 'src/app/sanity/types';
 import { Observable } from 'rxjs';
@@ -8,17 +8,11 @@ import { Observable } from 'rxjs';
   templateUrl: './recentblogs.component.html',
   styleUrls: ['./recentblogs.component.css'],
 })
-export class RecentblogsComponent implements OnInit {
-  constructor(private sanityService: SanityService) {}
-  blog$!: Observable<Blog[]>;
-  loading: boolean = false;
-
-  ngOnInit(): void {
-    this.blog$ = this.sanityService.getAllPosts();
-    
-  }
-
+export class RecentblogsComponent{
   
+ blog$ = inject(SanityService).getAllPosts();
+
+ 
 
   // async getPosts(): Promise<Blog[]>  {
   //   this.loading = true;
