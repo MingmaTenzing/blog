@@ -1,31 +1,56 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SanityService } from '../sanity/sanity.service';
-import { Observable } from 'rxjs';
+
 import { Blog } from '../sanity/types';
 import { SanityImagePipe } from '../sanity/sanity-image.pipe';
 import { PortableTextPipe } from '../sanity/portable-text.pipe';
+import { Meta } from '@angular/platform-browser';
+import { Title } from '@angular/platform-browser';
+
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css'],
- 
 })
-export class PostComponent implements OnInit {
+export class PostComponent implements OnInit, OnDestroy {
   constructor(
     private router: ActivatedRoute,
     private sanityService: SanityService,
-
+    private meta: Meta,
+    private title: Title
   ) {}
   slug: string = '';
-  post$!: Observable<Blog>;
-  
+  post!: Blog;
+  subscription!: Subscription;
 
   ngOnInit(): void {
     this.router.params.subscribe((param) => (this.slug = param['slug']));
-    this.post$ = this.sanityService.getSinglePost(this.slug);
+    this.subscription = this.sanityService
+      .getSinglePost(this.slug)
+      .subscribe((data) => {
+        this.post = data;
+        if (this.post) {
+          this.title.setTitle(this.post.title);
+          this.meta.updateTag({
+            property: 'og:title',
+            content: `${this.post.title}`,
+          });
+          this.meta.updateTag({
+            property: 'og:image',
+            content: `${this.post.mainImage}`,
+          });
+          this.meta.updateTag({
+            property: 'og:description',
+            content: `${this.post.title}`,
+          });
+        }
+      });
+  }
 
-    
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }
