@@ -19,7 +19,7 @@ export class PortableTextPipe implements PipeTransform {
     marks: {},
     block: {
       blockquote: ({ children }) =>
-        ` <blockquote class="  border-l-4 pl-2  italic  border-gray-400 ">${children}</blockquote>`,
+        ` <blockquote class=" my-4  border-l-4 pl-2  italic  border-gray-400 ">${children}</blockquote>`,
       h3: ({ children, value }) => {
         return `<h3 class="font-bold text-2xl my-4">${children}</h3>`;
       },
