@@ -14,10 +14,10 @@
     </div>
     <img class="rounded-lg md:h-[400px] md:w-full object-cover md:object-center" src="{{ post.mainImage }}" />
 
+  </div>
     <div
       *ngIf="post.body"
       class=" py-10 text-base md:text-lg "
       [innerHTML]="post.body | portableText"
     ></div>
-  </div>
 </div>

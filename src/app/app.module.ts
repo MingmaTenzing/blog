@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { HomeModule } from './home/home.module';
 import { PortableTextPipe } from './sanity/portable-text.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent ],
@@ -21,6 +22,7 @@ import { PortableTextPipe } from './sanity/portable-text.pipe';
     AppRoutingModule,
     BrowserModule,
     RouterModule,
+    FormsModule,
     HomeModule
   ],
   providers: [],

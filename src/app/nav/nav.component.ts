@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DarkmodeService } from './darkmode.service';
 import { fadeInDownAnimation, fadeInDownOnEnterAnimation, fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, fadeOutUpOnLeaveAnimation } from 'angular-animations';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-nav',
@@ -11,11 +12,17 @@ fadeInDownOnEnterAnimation({duration:200}), fadeOutUpOnLeaveAnimation({duration:
   ]
  
 })
-export class NavComponent {
+export class NavComponent implements OnInit {
   constructor( private darkmode:DarkmodeService) {}
 isModalOpen:boolean = false;
-  switchTheme() {
-    this.darkmode.changeTheme();
+theme:boolean = false;
+  ngOnInit(): void {
+      console.log(this.theme)
+  }
+switchTheme() {
+    this.darkmode.changeTheme(this.theme);
+
+
   }
   
   changeModalState() {
@@ -23,6 +30,7 @@ isModalOpen:boolean = false;
 
     console.log(this.isModalOpen)
   }
+
 
 
 }

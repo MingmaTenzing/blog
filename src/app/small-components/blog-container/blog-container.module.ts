@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BlogContainerComponent } from './blog-container.component';
 import { PortableTextPipe } from 'src/app/sanity/portable-text.pipe';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 
@@ -11,6 +12,7 @@ import { PortableTextPipe } from 'src/app/sanity/portable-text.pipe';
   ],
   imports: [
     CommonModule,
+    AppRoutingModule,
   ],
   exports:[BlogContainerComponent],
   providers:[]

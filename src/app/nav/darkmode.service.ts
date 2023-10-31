@@ -6,11 +6,14 @@ import { Injectable, ElementRef } from '@angular/core';
 export class DarkmodeService {
   constructor() { }
 
-  isDarkModeEnabled : boolean = false;
 
-  changeTheme() {
-    this.isDarkModeEnabled = !this.isDarkModeEnabled;
+
+  changeTheme(theme: boolean) {
+  
+
     document.body.classList.toggle("dark-theme")
   }
+
+
 
 }
