@@ -10,9 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { HomeModule } from './home/home.module';
 import { FormsModule } from '@angular/forms';
-import {provideClientHydration} from '@angular/platform-browser';
 
-import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent ],
@@ -28,7 +26,7 @@ import { NgOptimizedImage } from '@angular/common';
     HomeModule,
     
   ],
-  providers: [NgOptimizedImage, provideClientHydration()],
+  providers: [],
 
   bootstrap: [AppComponent],
 })
