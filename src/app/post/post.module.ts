@@ -6,18 +6,10 @@ import { PostComponent } from './post.component';
 import { PortableTextPipe } from '../sanity/portable-text.pipe';
 import { SanityImagePipe } from '../sanity/sanity-image.pipe';
 
-
 @NgModule({
-  declarations: [
-    PostComponent,
-    SanityImagePipe,
-    PortableTextPipe
-    
-  ],
-  imports: [
-    CommonModule,
-    PostRoutingModule],
-    providers:[SanityImagePipe, PortableTextPipe],
-  exports:[PortableTextPipe, SanityImagePipe]
+  declarations: [PostComponent, SanityImagePipe, PortableTextPipe],
+  imports: [CommonModule, PostRoutingModule],
+  providers: [SanityImagePipe, PortableTextPipe],
+  exports: [],
 })
-export class PostModule { }
+export class PostModule {}
