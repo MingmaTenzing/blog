@@ -44,10 +44,7 @@ export class PostComponent implements OnInit, OnDestroy {
             property: 'og:image',
             content: `${this.post.mainImage}`,
           });
-          this.meta.updateTag({
-            property: 'og:description',
-            content: `${this.post.title}`,
-          });
+          
        
         }
       });

@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { NavModule } from './nav/nav.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from './header/header.module';
-import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
-
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { HomeModule } from './home/home.module';
@@ -27,7 +25,7 @@ import { FormsModule } from '@angular/forms';
     HomeModule,
     
   ],
-  providers: [{provide: LocationStrategy, useClass:HashLocationStrategy}],
+  providers: [],
 
   bootstrap: [AppComponent],
 })
