@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { NavModule } from './nav/nav.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from './header/header.module';
+import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { HomeModule } from './home/home.module';
 import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [AppComponent ],
@@ -22,9 +24,10 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     RouterModule,
     FormsModule,
-    HomeModule
+    HomeModule,
+    
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass:HashLocationStrategy}],
 
   bootstrap: [AppComponent],
 })

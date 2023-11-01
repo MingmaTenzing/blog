@@ -10,6 +10,7 @@ import imageUrlBuilder from '@sanity/image-url';
 
 @Injectable({
   providedIn: 'root',
+  
 })
 export class SanityService {
   private client: SanityClient;

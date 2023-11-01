@@ -1,6 +1,7 @@
 <div  [routerLink]="['/post', post.slug]"  routerLinkActive="router-link-active"  class="space-y-4 m-2  w-[full] md:w-[378px] lg:w-[340px] ">
     <div>
       <img
+      loading="eager"
         class=" w-full md:h-[200px] object-cover"
         src={{post.mainImage}}
       />
