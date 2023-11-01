@@ -1,19 +1,21 @@
 import { Component, OnInit, OnDestroy, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SanityService } from '../sanity/sanity.service';
-
+import { CommonModule, NgOptimizedImage } from '@angular/common'
 import { Blog } from '../sanity/types';
-import { SanityImagePipe } from '../sanity/sanity-image.pipe';
-import { PortableTextPipe } from '../sanity/portable-text.pipe';
+
 import { Meta } from '@angular/platform-browser';
 import { Title } from '@angular/platform-browser';
 
 import { Subscription } from 'rxjs';
+import { PortableTextPipe } from '../sanity/portable-text.pipe';
+import { SanityImagePipe } from '../sanity/sanity-image.pipe';
 
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css'],
+  
 })
 export class PostComponent implements OnInit, OnDestroy {
   constructor(
@@ -46,6 +48,7 @@ export class PostComponent implements OnInit, OnDestroy {
             property: 'og:description',
             content: `${this.post.title}`,
           });
+       
         }
       });
   }
