@@ -17,6 +17,7 @@ import { HomeLoadingComponent } from './home-loading/home-loading.component';
     RouterModule,
     AppRoutingModule,
     BlogContainerModule,
+    NgxSkeletonLoaderModule,
     HeaderModule,
   ],
   exports: [],

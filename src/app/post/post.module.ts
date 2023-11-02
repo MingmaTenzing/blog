@@ -9,9 +9,9 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { PostLoadingComponent } from './post-loading/post-loading.component';
 
 @NgModule({
-  declarations: [PostComponent, SanityImagePipe, PortableTextPipe],
-  imports: [CommonModule, PostRoutingModule],
-  providers: [SanityImagePipe, PortableTextPipe],
+  declarations: [PostComponent, SanityImagePipe, PortableTextPipe, PostLoadingComponent],
+  imports: [CommonModule, PostRoutingModule, NgxSkeletonLoaderModule],
+  providers: [SanityImagePipe, PortableTextPipe,],
   exports: [],
 })
 export class PostModule {}
