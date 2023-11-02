@@ -7,16 +7,18 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
 import { BlogContainerModule } from '../small-components/blog-container/blog-container.module';
 import { HeaderModule } from '../header/header.module';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { HomeLoadingComponent } from './home-loading/home-loading.component';
 
 @NgModule({
-  declarations: [HomeComponent, AllBlogPostsComponent, RecentblogsComponent],
+  declarations: [HomeComponent, AllBlogPostsComponent, RecentblogsComponent, HomeLoadingComponent],
   imports: [
     CommonModule,
     RouterModule,
     AppRoutingModule,
     BlogContainerModule,
+    NgxSkeletonLoaderModule,
     HeaderModule,
-    NgOptimizedImage
   ],
   exports: [],
 })

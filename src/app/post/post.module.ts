@@ -5,11 +5,13 @@ import { PostRoutingModule } from './post-routing.module';
 import { PostComponent } from './post.component';
 import { PortableTextPipe } from '../sanity/portable-text.pipe';
 import { SanityImagePipe } from '../sanity/sanity-image.pipe';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { PostLoadingComponent } from './post-loading/post-loading.component';
 
 @NgModule({
-  declarations: [PostComponent, SanityImagePipe, PortableTextPipe],
-  imports: [CommonModule, PostRoutingModule, NgOptimizedImage],
-  providers: [SanityImagePipe, PortableTextPipe],
+  declarations: [PostComponent, SanityImagePipe, PortableTextPipe, PostLoadingComponent],
+  imports: [CommonModule, PostRoutingModule, NgxSkeletonLoaderModule],
+  providers: [SanityImagePipe, PortableTextPipe,],
   exports: [],
 })
 export class PostModule {}

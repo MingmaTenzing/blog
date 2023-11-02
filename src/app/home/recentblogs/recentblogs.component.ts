@@ -10,9 +10,9 @@ import { Observable } from 'rxjs';
 })
 export class RecentblogsComponent{
   
- blog$ = inject(SanityService).getAllPosts();
+blog$ = inject(SanityService).getAllPosts();
 
- 
+ number: number = 1;
 
   // async getPosts(): Promise<Blog[]>  {
   //   this.loading = true;
