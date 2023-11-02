@@ -1,5 +1,6 @@
 <div class="p-4 md:w-[680px] m-auto">
-  <div *ngIf="loading === false; else dataFetching">
+  <article *ngIf="loading === false; else dataFetching">
+
     <div class="space-y-6">
       <p class="text-purple-text font-semibold">{{ post._createdAt | date }}</p>
       <h1 class="font-extrabold text-3xl md:text-4xl lg:text-[42px]">
@@ -30,7 +31,7 @@
       class="py-10 text-base md:text-lg"
       [innerHTML]="post.body | portableText"
     ></div>
-  </div>
+  </article>
 
   <ng-template #dataFetching>
     <app-post-loading></app-post-loading>
