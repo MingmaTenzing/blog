@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { HomeModule } from './home/home.module';
 import { FormsModule } from '@angular/forms';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     NavModule,
     BrowserAnimationsModule,
     HeaderModule,
+    NgxSkeletonLoaderModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserModule,
