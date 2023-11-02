@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 import { PostRoutingModule } from './post-routing.module';
 import { PostComponent } from './post.component';
@@ -9,8 +9,8 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { PostLoadingComponent } from './post-loading/post-loading.component';
 
 @NgModule({
-  declarations: [PostComponent, SanityImagePipe, PortableTextPipe, PostLoadingComponent],
-  imports: [CommonModule, PostRoutingModule, NgxSkeletonLoaderModule],
+  declarations: [PostComponent, SanityImagePipe, PortableTextPipe],
+  imports: [CommonModule, PostRoutingModule],
   providers: [SanityImagePipe, PortableTextPipe],
   exports: [],
 })

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { AllBlogPostsComponent } from './all-blog-posts/all-blog-posts.component';
 import { RecentblogsComponent } from './recentblogs/recentblogs.component';
@@ -18,7 +18,6 @@ import { HomeLoadingComponent } from './home-loading/home-loading.component';
     AppRoutingModule,
     BlogContainerModule,
     HeaderModule,
-    NgxSkeletonLoaderModule,
   ],
   exports: [],
 })

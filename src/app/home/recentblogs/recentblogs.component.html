@@ -1,30 +1,54 @@
 <div class="md:w-[840px] lg:w-[1200px] m-auto p-4 md:p-6 space-y-8">
   <p class="py-4 text-2xl font-semibold">Recent Blog Posts</p>
 
- 
-  <div *ngIf="blog$ | async as blog else loading">
-    <div
-      *ngIf="blog$ | async as blog"
-      class="space-y-8 lg:space-y-0 lg:space-x-8 lg:flex"
-    >
-      <div [routerLink]="['/post', blog[0].slug]" class="space-y-4 lg:w-1/2">
+  <div *ngIf="blog$  |async as blog" class="space-y-8 lg:space-y-0 lg:space-x-8 lg:flex">
+    <div [routerLink]="['/post', blog[0].slug]"    class="space-y-4 lg:w-1/2">
+      <div>
+        <img loading="eager"
+          class="md:h-[228px] object-cover object-center md:w-full"
+          src="{{blog[0].mainImage}}"
+        />
+      </div>
+      <div class="space-y-3">
+        <p class="font-semibold text-purple-text">{{blog[0]._createdAt | date}}</p>
+        <h2 class="text-2xl font-bold">
+{{blog[0].title}}        </h2>
+        <p class="text-gray-text">
+          How do you create compelling presentations that wow your collegaues and
+          impress your managers
+        </p>
+        <div class="flex space-x-3 items-center">
+          <div
+            class="bg-purple-200 rounded-full flex justify-center items-center py-2 px-4"
+          >
+            <span class="text-purple-text">Design</span>
+          </div>
+          <div class="bg-purple-200 rounded-full px-4 py-2">
+            <span class="text-purple-text">Research</span>
+          </div>
+          <div class="bg-pink-200 rounded-full px-4 py-2">
+            <span class="text-pink-text">Event</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THE CODE BELOW IS FOR THE OTHER BLOG POSTS Treat it as a dummy component later once you have data and use ng for to map the data -->
+    <div class="space-y-8 lg:w-1/2">
+      <div  [routerLink]="['/post', blog[1].slug]" class="space-y-4 md:flex md:space-y-0 md:space-x-6">
         <div>
-          <img
-            loading="eager"
-            class="md:h-[228px] object-cover object-center md:w-full"
-            src="{{ blog[0].mainImage }}"
+          <img loading="eager"
+            class="md:min-w-[320px] md:h-[200px] object-cover"
+            src={{blog[1].mainImage}}
           />
         </div>
         <div class="space-y-3">
-          <p class="font-semibold text-purple-text">
-            {{ blog[0]._createdAt | date }}
-          </p>
+          <p class="font-semibold text-purple-text">{{blog[1]._createdAt | date}}</p>
           <h2 class="text-2xl font-bold">
-            {{ blog[0].title }}
-          </h2>
+{{blog[1].title}}          </h2>
           <p class="text-gray-text">
-            How do you create compelling presentations that wow your collegaues
-            and impress your managers
+            How do you create compelling presentations that wow your collegaues and
+            impress your managers
           </p>
           <div class="flex space-x-3 items-center">
             <div
@@ -41,120 +65,68 @@
           </div>
         </div>
       </div>
-
-      <div class="space-y-8 lg:w-1/2">
-        <div
-          [routerLink]="['/post', blog[1].slug]"
-          class="space-y-4 md:flex md:space-y-0 md:space-x-6"
-        >
-          <div>
-            <img
-              loading="eager"
-              class="md:min-w-[320px] md:h-[200px] object-cover"
-              src="{{ blog[1].mainImage }}"
-            />
-          </div>
-          <div class="space-y-3">
-            <p class="font-semibold text-purple-text">
-              {{ blog[1]._createdAt | date }}
-            </p>
-            <h2 class="text-2xl font-bold">
-              {{ blog[1].title }}
-            </h2>
-            <p class="text-gray-text">
-              How do you create compelling presentations that wow your
-              collegaues and impress your managers
-            </p>
-            <div class="flex space-x-3 items-center">
-              <div
-                class="bg-purple-200 rounded-full flex justify-center items-center py-2 px-4"
-              >
-                <span class="text-purple-text">Design</span>
-              </div>
-              <div class="bg-purple-200 rounded-full px-4 py-2">
-                <span class="text-purple-text">Research</span>
-              </div>
-              <div class="bg-pink-200 rounded-full px-4 py-2">
-                <span class="text-pink-text">Event</span>
-              </div>
-            </div>
-          </div>
+      <div class="space-y-4 md:flex md:space-y-0 md:space-x-6">
+        <div>
+          <img loading="eager"
+            class="md:min-w-[320px] md:h-[200px] object-cover"
+            src={{blog[2].mainImage}}
+          />
         </div>
-        <div class="space-y-4 md:flex md:space-y-0 md:space-x-6">
-          <div>
-            <img
-              loading="eager"
-              class="md:min-w-[320px] md:h-[200px] object-cover rounded-lg"
-              src="{{ blog[2].mainImage }}"
-            />
-          </div>
-          <div class="space-y-3">
-            <p class="font-semibold text-purple-text">
-              {{ blog[2]._createdAt }}
-            </p>
-            <h2 class="text-2xl font-bold">
-              {{ blog[2].title }}
-            </h2>
-            <p class="text-gray-text">
-              How do you create compelling presentations that wow your
-              collegaues and impress your managers
-            </p>
-            <div class="flex space-x-3 items-center">
-              <div
-                class="bg-purple-200 rounded-full flex justify-center items-center py-2 px-4"
-              >
-                <span class="text-purple-text">Design</span>
-              </div>
-              <div class="bg-purple-200 rounded-full px-4 py-2">
-                <span class="text-purple-text">Research</span>
-              </div>
-              <div class="bg-pink-200 rounded-full px-4 py-2">
-                <span class="text-pink-text">Event</span>
-              </div>
+        <div class="space-y-3">
+          <p class="font-semibold text-purple-text">{{blog[2]._createdAt}}</p>
+          <h2 class="text-2xl font-bold">
+{{blog[2].title}}          </h2>
+          <p class="text-gray-text">
+            How do you create compelling presentations that wow your collegaues and
+            impress your managers
+          </p>
+          <div class="flex space-x-3 items-center">
+            <div
+              class="bg-purple-200 rounded-full flex justify-center items-center py-2 px-4"
+            >
+              <span class="text-purple-text">Design</span>
+            </div>
+            <div class="bg-purple-200 rounded-full px-4 py-2">
+              <span class="text-purple-text">Research</span>
+            </div>
+            <div class="bg-pink-200 rounded-full px-4 py-2">
+              <span class="text-pink-text">Event</span>
             </div>
           </div>
         </div>
       </div>
+  
     </div>
+  </div>
 
-    <div
-      *ngIf="blog$ | async as blog"
-      class="space-y-4 lg:flex lg:space-x-8 lg:space-y-0"
-    >
-      <div class="lg:w-1/2">
-        <img
-          loading="eager"
-          class="md:h-[228px] object-cover object-center md:w-full"
-          src="{{ blog[3].mainImage }}"
-        />
-      </div>
-      <div class="space-y-3 lg:w-1/2">
-        <p class="font-semibold text-purple-text">
-          {{ blog[3]._createdAt | date }}
-        </p>
-        <h2 class="text-2xl font-bold">
-          {{ blog[3].title }}
-        </h2>
-        <p class="text-gray-text">dsfdsfds</p>
-        <div class="flex space-x-3 items-center">
-          <div
-            class="bg-purple-200 rounded-full flex justify-center items-center py-2 px-4"
-          >
-            <span class="text-purple-text">Design</span>
-          </div>
-          <div class="bg-purple-200 rounded-full px-4 py-2">
-            <span class="text-purple-text">Research</span>
-          </div>
-          <div class="bg-pink-200 rounded-full px-4 py-2">
-            <span class="text-pink-text">Event</span>
-          </div>
+
+
+  <!-- RECENT BLOGS LAST POST -->
+  <div *ngIf="blog$ |async as blog" class="space-y-4 lg:flex lg:space-x-8 lg:space-y-0">
+    <div  class="lg:w-1/2">
+      <img loading="eager"
+        class="md:h-[228px] object-cover object-center md:w-full"
+        src={{blog[3].mainImage}}
+      />
+    </div>
+    <div class="space-y-3 lg:w-1/2 ">
+      <p class="font-semibold text-purple-text">{{blog[3]._createdAt | date}}</p>
+      <h2 class="text-2xl font-bold">
+{{blog[3].title}}      </h2>
+      <p class="text-gray-text">dsfdsfds</p>
+      <div class="flex space-x-3 items-center">
+        <div
+          class="bg-purple-200 rounded-full flex justify-center items-center py-2 px-4"
+        >
+          <span class="text-purple-text">Design</span>
+        </div>
+        <div class="bg-purple-200 rounded-full px-4 py-2">
+          <span class="text-purple-text">Research</span>
+        </div>
+        <div class="bg-pink-200 rounded-full px-4 py-2">
+          <span class="text-pink-text">Event</span>
         </div>
       </div>
     </div>
   </div>
-
-  <ng-template #loading><div>
-    <app-home-loading></app-home-loading>
-  </div></ng-template>
-
-</div> 
+</div>

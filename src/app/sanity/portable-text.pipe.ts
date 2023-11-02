@@ -6,6 +6,7 @@ import { PortableTextBlock } from '@portabletext/types';
 
 @Pipe({
   name: 'portableText',
+  
 })
 export class PortableTextPipe implements PipeTransform {
   constructor(private sanityImagePipe: SanityImagePipe){}
@@ -15,7 +16,7 @@ export class PortableTextPipe implements PipeTransform {
       image: ({ value }: { value: string }) =>
         '<img loading="lazy" class="my-4 rounded-lg w-full h-[500px] object-cover  object-center" src="' +
         this.sanityImagePipe.transform(value, 900) +
-        '" />',
+        '"  />',
     },
     marks: {},
     block: {
