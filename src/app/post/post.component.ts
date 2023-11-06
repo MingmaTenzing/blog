@@ -26,13 +26,12 @@ export class PostComponent implements OnInit, OnDestroy {
   subscription!: Subscription;
 
   ngOnInit(): void {
-    window.scrollTo(0,0)
-   
+    window.scrollTo(0, 0);
+
     this.router.params.subscribe((param) => (this.slug = param['slug']));
     this.subscription = this.sanityService
       .getSinglePost(this.slug)
       .subscribe((data) => {
-   
         this.post = data;
         if (this.post) {
           this.title.setTitle(this.post.title);

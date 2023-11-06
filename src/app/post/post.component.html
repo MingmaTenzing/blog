@@ -1,12 +1,14 @@
 <div class="p-4 md:w-[680px] m-auto">
   <article *ngIf="loading === false; else dataFetching">
-
     <div class="space-y-6">
       <p class="text-purple-text font-semibold">{{ post._createdAt | date }}</p>
       <h1 class="font-extrabold text-3xl md:text-4xl lg:text-[42px]">
         {{ post.title }}
       </h1>
 
+      <div *ngFor="let item of post.categories">
+        {{ item }}
+      </div>
       <div class="flex space-x-2 items-center">
         <div>
           <a href="https://www.mingmatenzing.com/" target="_blank">
