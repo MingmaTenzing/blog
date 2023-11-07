@@ -1,4 +1,4 @@
-<div  [routerLink]="['/post', post.slug]"  routerLinkActive="router-link-active"  class="space-y-4 m-2  w-[full] md:w-[378px] lg:w-[340px] ">
+<div  [routerLink]="['/post', post.slug]"  routerLinkActive="router-link-active"  class="space-y-4 m-2  w-[full] md:w-[378px] lg:w-[360px] ">
     <div>
       <img
       loading="eager"
@@ -7,22 +7,21 @@
       />
     </div>
     <div class="space-y-3">
-      <p class="font-semibold text-purple-text">{{post._createdAt |date}}</p>
+      <p class="font-semibold text-gray-600">{{post._createdAt | date:'MMM d'}}</p>
       <h2 class="text-2xl font-bold">
      {{post.title}}
       </h2>
       <p class="text-gray-text">
         How do you create compelling presentations that wow your collegaues and impress your managers
       </p>
-      <div class="flex space-x-3 items-center">
-        <div class="bg-purple-200 rounded-full flex justify-center items-center  py-2 px-4 ">
+    
+      <div class=" flex space-x-3  items-center">
 
-          <span class="text-purple-text">Design</span>
-        </div>
-        <div class="bg-purple-200 rounded-full px-4 py-2">
-          <span class="text-purple-text">Research</span>        </div>
-        <div class="bg-pink-200 rounded-full px-4 py-2">
-          <span class=" text-pink-text">Event</span>
+        <div *ngFor="let category of post.categories ">
+          <div class=" bg-gray-100 rounded-full flex justify-center items-center py-2 px-4">
+            <span class=" text-sm text-gray-600">{{category}}</span>
+          </div>
+  
         </div>
       </div>
     </div>

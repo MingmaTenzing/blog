@@ -8,6 +8,7 @@ author: [
 ];
 categories: string[];
 mainImage: string;
+subtitle: string;
 slug: string;
 title:string;
 _createdAt: Date;
