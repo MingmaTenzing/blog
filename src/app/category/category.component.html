@@ -1,0 +1,18 @@
+<section class="p-4 md:p-6">
+  <div
+    *ngIf="categories$ | async as cat"
+    class="flex items-center space-x-4 overflow-x-scroll scrollbar-hide"
+  >
+    <div class="bg-gray-100 rounded-full flex space-x-2 justify-center items-center py-2 px-4">
+      <signal-outline-icon [size]="20" class=" text-gray-600"></signal-outline-icon>
+    <p class="hidden md:flex text-gray-600 text-sm ">Explore Topics</p>
+    </div>
+
+    <div
+      *ngFor="let category of cat"
+      class=" group cursor-pointer active:border-[#242424]  hover:border-[#242424] border border-gray-100  bg-gray-100 rounded-full flex  justify-center items-center py-2 px-4 "
+    >
+      <p class="text-sm text-gray-600 group-hover:text-[#242424] ">{{ category.title }}</p>
+    </div>
+  </div>
+</section>
