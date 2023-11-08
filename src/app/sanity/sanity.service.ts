@@ -36,8 +36,9 @@ export class SanityService {
       subtitle,
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
-      "categories": categories[]->title,
-        "author": author -> name,
+      "categoryTitle":  categories[] -> title,
+     "categoryId":categories[]->_id,
+             "author": author -> name,
       body
     }`);
     return from(promise);
@@ -48,7 +49,7 @@ export class SanityService {
      title
       
     }`);
-    return from(promise)
+    return from(promise);
   }
   getImageUrlBuilder(source: SanityImageSource): ImageUrlBuilder {
     return this.imageUrlBuilder.image(source);
@@ -63,14 +64,15 @@ export class SanityService {
       subtitle,
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
-      "categories": [categories[]->title,categories[]->_id],
-      "author": [author->name, author->image.asset->url],
+      "categoryTitle":  categories[] -> title,
+     "categoryId":categories[]->_id,
+           "author": [author->name, author->image.asset->url],
       body
     }`);
     return from(promise);
   }
 
-  getCategoryPosts(id:number) {
+  getCategoryPosts(id: string) {
     const promise = this.sanityClient()
       .fetch(`*[_type == "post" && references("${id}")]{
       _id,
@@ -79,13 +81,11 @@ export class SanityService {
       subtitle,
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
-      "categories": [categories[]->title,categories[]->_id],
-      "author": [author->name, author->image.asset->url],
+      "categoryTitle":  categories[] -> title,
+     "categoryId":categories[]->_id,
+           "author": [author->name, author->image.asset->url],
       body
     }`);
     return from(promise);
-
   }
-  
 }
-

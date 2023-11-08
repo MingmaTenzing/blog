@@ -6,10 +6,8 @@ author: [
     name: string,
     image: string,
 ];
-categories: [
-    title: string,
-    _id: number
-]
+categoryTitle: string[],
+categoryId: string[],
 mainImage: string;
 subtitle: string;
 slug: string;
@@ -19,7 +17,13 @@ _id:string;
 body: PortableTextBlock[];
 }
 
-export interface Category{
-    title: string
+export interface Categorytitle{
+    title: string,
 
+
+
+}
+
+export interface CategoryId {
+    _id: string;
 }

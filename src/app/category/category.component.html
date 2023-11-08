@@ -15,4 +15,11 @@
       <p class="text-sm text-gray-600 group-hover:text-[#242424] ">{{ category.title }}</p>
     </div>
   </div>
+
+<div>
+    <div *ngFor="let blog of blogs | async">
+       <app-blog-container [post]="blog"> </app-blog-container>
+
+    </div>
+</div>
 </section>

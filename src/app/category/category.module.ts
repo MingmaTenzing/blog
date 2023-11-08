@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { CategoryRoutingModule } from './category-routing.module';
 import { NgHeroiconsModule } from '@dimaslz/ng-heroicons';
 import { HttpClientModule } from '@angular/common/http';
-import { SanityClient } from '@sanity/client';
 import { CategoryComponent } from './category.component';
+import { BlogContainerModule } from '../small-components/blog-container/blog-container.module';
 
 
 @NgModule({
@@ -16,7 +16,8 @@ CategoryComponent  ],
     CommonModule,
     CategoryRoutingModule,
     NgHeroiconsModule,
-    HttpClientModule
+    HttpClientModule,
+    BlogContainerModule,
   ]
 })
 export class CategoryModule { }
