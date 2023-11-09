@@ -1,7 +1,7 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges, inject } from '@angular/core';
 import { SanityService } from '../sanity/sanity.service';
-import { Blog } from '../sanity/types';
-import { ActivatedRoute } from '@angular/router';
+import { Blog, category } from '../sanity/types';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -10,16 +10,33 @@ import { Observable } from 'rxjs';
   styleUrls: ['./category.component.css'],
 })
 export class CategoryComponent implements OnInit {
-constructor( private sanityService: SanityService, private router:ActivatedRoute) {}
+  constructor(
+    private sanityService: SanityService,
+    private router: ActivatedRoute
+  ) {}
 
-categories$ = this.sanityService.getAllCategories();
-id!:string;
-blogs!:Observable<Blog[]>;
+  categories$ = this.sanityService.getAllCategories();
+  id!: string;
+  title: string = '';
+  blogs!: Observable<Blog[]>;
+  isFollowing: boolean = false;
+  private navigateRouter = inject(Router);
 
-ngOnInit(): void {
-this.router.params.subscribe(params => this.id = params["id"])
- this.blogs = this.sanityService.getCategoryPosts(this.id);   
-console.log(this.id)
-}
 
+  ngOnInit(): void {
+    this.router.params.subscribe((params) => {
+      this.id = params['id'];
+      this.title = params['category'];
+    });
+    this.blogs = this.sanityService.getCategoryPosts(this.id);
+  }
+
+  follow() {
+    this.isFollowing = !this.isFollowing;
+  }
+  fetchCategoryPosts(id:string, title:string) {
+    this.navigateRouter.navigate(['category',`${title}`,`${id}`])
+    this.blogs = this.sanityService.getCategoryPosts(id);
+
+  }
 }

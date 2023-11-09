@@ -9,11 +9,18 @@
     </div>
 
     <div
-      *ngFor="let category of cat"
+      *ngFor="let category of cat"  (click)="fetchCategoryPosts(category._id, category.title)"
       class=" group cursor-pointer active:border-[#242424]  hover:border-[#242424] border border-gray-100  bg-gray-100 rounded-full flex  justify-center items-center py-2 px-4 "
     >
-      <p class="text-sm text-gray-600 group-hover:text-[#242424] ">{{ category.title }}</p>
+      <p  class="text-sm text-gray-600 group-hover:text-[#242424] ">{{ category.title }}</p>
     </div>
+  </div>
+
+  <div class=" flex justify-center flex-col items-center py-6 md:py-10 border-b space-y-4 md:space-y-6">
+    <h2 class=" font-bold text-3xl ">{{title}}</h2>
+    <button *ngIf="isFollowing"  class=" rounded-full border px-4 py-2  opacity-50   text-sm" (click)="follow()">Unfollow</button>
+    <button  *ngIf="!isFollowing" class=" rounded-full border px-4 py-2 border-[#242424] text-sm" (click)="follow()">+ Follow</button>
+    
   </div>
 
 <div class=" mt-10 space-y-4 md:space-y-0 md:flex md:flex-wrap">

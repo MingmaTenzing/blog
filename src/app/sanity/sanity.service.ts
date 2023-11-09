@@ -45,7 +45,8 @@ export class SanityService {
 
   getAllCategories() {
     const promise = this.sanityClient().fetch(`*[_type == "category"]{
-     title
+     title,
+     _id,
       
     }`);
     return from(promise);
