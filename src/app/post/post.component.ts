@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, inject } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SanityService } from '../sanity/sanity.service';
 import { Blog } from '../sanity/types';
@@ -33,6 +33,7 @@ export class PostComponent implements OnInit, OnDestroy {
       .getSinglePost(this.slug)
       .subscribe((data) => {
         this.post = data;
+        console.log(data)
         if (this.post) {
           this.title.setTitle(this.post.title);
           this.meta.updateTag({
