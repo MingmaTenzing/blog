@@ -17,7 +17,7 @@ id!:string;
 blogs!:Observable<Blog[]>;
 
 ngOnInit(): void {
-this.router.params.subscribe(params => this.id = params["slug"])
+this.router.params.subscribe(params => this.id = params["id"])
  this.blogs = this.sanityService.getCategoryPosts(this.id);   
 console.log(this.id)
 }

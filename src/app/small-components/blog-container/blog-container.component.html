@@ -1,31 +1,37 @@
-<div   routerLinkActive="router-link-active"  class="space-y-4 m-2  w-[full] md:w-[378px] lg:w-[360px] ">
-    <div>
-      <img
-      [routerLink]="['/post', post.slug]" 
+<div
+  routerLinkActive="router-link-active"
+  class="space-y-4 m-2 w-[full] md:w-[378px] lg:w-[360px]"
+>
+  <div>
+    <img
+      [routerLink]="['/post', post.slug]"
       loading="eager"
-        class=" w-full md:h-[200px] object-cover"
-        src={{post.mainImage}}
-      />
-    </div>
-    <div class="space-y-3">
-      <p class="font-semibold text-gray-600">{{post._createdAt | date:'MMM d'}}</p>
-      <h2 [routerLink]="['/post', post.slug]"  class="text-2xl font-bold"> 
-     {{post.title}}
-      </h2>
-      <p [routerLink]="['/post', post.slug]"  class="text-gray-text">
-        How do you create compelling presentations that wow your collegaues and impress your managers
-      </p>
-    
-      <div class=" flex space-x-3  items-center">
+      class="w-full md:h-[200px] object-cover"
+      src="{{ post.mainImage }}"
+    />
+  </div>
+  <div class="space-y-3">
+    <p class="font-semibold text-gray-600">
+      {{ post._createdAt | date : "MMM d" }}
+    </p>
+    <h2 [routerLink]="['/post', post.slug]" class=" cursor-pointer text-2xl font-bold">
+      {{ post.title }}
+    </h2>
+    <p *ngIf="post.subtitle" [routerLink]="['/post', post.slug]" class="text-gray-text cursor-pointer">
+      {{(post.subtitle | slice:0:120) + "..."}}
+    </p>
 
-        <div *ngFor="let category of post.categoryTitle">
-          <div class=" bg-gray-100 rounded-full flex justify-center items-center py-2 px-4">
-            <span class=" text-sm text-gray-600">{{category}}</span>
-          </div>
-  
+    <div class="flex space-x-3 items-center">
+      <div *ngFor="let category of post.categories">
+        <div
+          [routerLink]="['/category', category.title, category._id]"
+          class="bg-gray-100 rounded-full border border-gray-100 cursor-pointer hover:border-gray-600 flex justify-center items-center py-2 px-4"
+        >
+          <span class="text-sm text-gray-600">{{ category.title }}</span>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>

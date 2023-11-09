@@ -1,7 +1,7 @@
 <div class="p-4 md:py-8 justify-between flex items-center">
   <div class=" flex items-center space-x-1">
-    <p class=" text-lg hidden md:flex  ">Powered By </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" width="40px" />
+    <p class=" md:text-lg  text-sm font-light ">Powered By </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" width="40px" class=" w-[32px] md:w-[40px]" />
   </div>
   <div class="md:hidden">
     <button
@@ -19,8 +19,6 @@
     <p>About</p>
     <p>Newsletter</p>
 
-    <mat-slide-toggle (click)="switchTheme()" [(ngModel)]="theme" [color]="'primary'">
-    </mat-slide-toggle>
   </div>
 
   <div *ngIf="isModalOpen" [@fadeInDownOnEnter]  [@fadeOutUpOnLeave] class="absolute top-0 bg-[#121212] text-white h-[100vh] left-0 w-full">
@@ -29,9 +27,6 @@
       <p class=" text-lg">Projects</p>
       <p class=" text-lg">About</p>
       <p class=" text-lg">Newsletter</p>
-
-      <mat-slide-toggle (click)="switchTheme()" [(ngModel)]="theme" [color]="'primary'">
-      </mat-slide-toggle>
 
       
     </div>

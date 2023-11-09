@@ -36,8 +36,7 @@ export class SanityService {
       subtitle,
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
-      "categoryTitle":  categories[] -> title,
-     "categoryId":categories[]->_id,
+     "categories": categories[] -> {title, _id},
              "author": author -> name,
       body
     }`);
@@ -64,8 +63,7 @@ export class SanityService {
       subtitle,
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
-      "categoryTitle":  categories[] -> title,
-     "categoryId":categories[]->_id,
+     "categories": categories[] -> {title, _id},
            "author": [author->name, author->image.asset->url],
       body
     }`);
@@ -81,8 +79,7 @@ export class SanityService {
       subtitle,
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
-      "categoryTitle":  categories[] -> title,
-     "categoryId":categories[]->_id,
+     "categories": categories[] -> {title, _id},
            "author": [author->name, author->image.asset->url],
       body
     }`);

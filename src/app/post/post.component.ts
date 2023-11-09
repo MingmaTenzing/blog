@@ -33,6 +33,7 @@ export class PostComponent implements OnInit, OnDestroy {
       .getSinglePost(this.slug)
       .subscribe((data) => {
         this.post = data;
+        console.log(data)
         if (this.post) {
           this.title.setTitle(this.post.title);
           this.meta.updateTag({
