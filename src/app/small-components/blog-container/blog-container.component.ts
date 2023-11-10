@@ -7,6 +7,7 @@ import { Blog } from 'src/app/sanity/types';
   styleUrls: ['./blog-container.component.css']
 })
 export class BlogContainerComponent {
-  @Input() post!:Blog;
+  @Input() post!:Blog; 
+  @Input() showCategories: boolean = true;
 
 }
