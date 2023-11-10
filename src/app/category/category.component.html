@@ -25,7 +25,7 @@
 
 <div class=" mt-10 space-y-4 md:space-y-0 md:flex md:flex-wrap">
     <div *ngFor="let blog of blogs | async" class="">
-       <app-blog-container [post]="blog"> </app-blog-container>
+       <app-blog-container [showCategories]="false" [post]="blog"> </app-blog-container>
 
     </div>
 </div>
