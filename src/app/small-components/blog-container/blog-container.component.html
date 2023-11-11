@@ -21,7 +21,7 @@
       {{(post.subtitle | slice:0:120) + "..."}}
     </p>
 
-    <div *ngIf="showCategories" class="flex space-x-3 items-center">
+    <div class="flex space-x-3 items-center">
       <div *ngFor="let category of post.categories">
         <div
           [routerLink]="['/category', category.title, category._id]"

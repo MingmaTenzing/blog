@@ -7,7 +7,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSlideToggleModule, _MatSlideToggleRequiredValidatorModule } from '@angular/material/slide-toggle';
 import {MatCardModule} from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
-import { Router, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [NavComponent],
@@ -16,9 +15,9 @@ import { Router, RouterModule } from '@angular/router';
     MatSlideToggleModule,
     MatIconModule,
     MatDividerModule,
-    RouterModule,
     MatButtonModule,
     _MatSlideToggleRequiredValidatorModule,
+
     FormsModule,
     MatCardModule
   ],
