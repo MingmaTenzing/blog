@@ -1,6 +1,7 @@
 <div class="md:w-[840px] lg:w-[1200px] m-auto p-4 md:p-6 space-y-8">
   <h2 class="py-4 text-3xl font-bold">Recent Blog Posts</h2>
 
+
   <div
     *ngIf="blog$ | async as blog; else loading"
     class="space-y-8 lg:space-y-0 lg:space-x-8 lg:flex"
@@ -34,6 +35,7 @@
           </div>
     
           </div>
+
         </div>
       </div>
     </div>
