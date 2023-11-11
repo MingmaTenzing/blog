@@ -35,7 +35,7 @@ export class PortableTextPipe implements PipeTransform {
     },
 
     list: {
-      bullet: ({ children }) => ` <ul class="list-disc">${children} </ul>`,
+      bullet: ({ children }) => ` <ul  class=" list-disc m-6">${children} </ul>`,
     },
   };
   transform(value: PortableTextBlock[]): string {
