@@ -6,11 +6,10 @@ import { NgHeroiconsModule } from '@dimaslz/ng-heroicons';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoryComponent } from './category.component';
 import { BlogContainerModule } from '../small-components/blog-container/blog-container.module';
-
+import { BlogLoadingModule } from '../small-components/blog-loading/blog-loading.module';
 
 @NgModule({
-  declarations: [
-CategoryComponent  ],
+  declarations: [CategoryComponent],
 
   imports: [
     CommonModule,
@@ -18,6 +17,7 @@ CategoryComponent  ],
     NgHeroiconsModule,
     HttpClientModule,
     BlogContainerModule,
-  ]
+    BlogLoadingModule,
+  ],
 })
-export class CategoryModule { }
+export class CategoryModule {}

@@ -26,7 +26,7 @@ export class CategoryComponent implements OnInit {
   id!: string;
   title: string = '';
   blogs!: Observable<Blog[]>;
-  isFollowing: boolean = false;
+  isFollowing: boolean = true;
   private navigateRouter = inject(Router);
   private htmlTitle = inject(Title);
   private meta = inject(Meta);
