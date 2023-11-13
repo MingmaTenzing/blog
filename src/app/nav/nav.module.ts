@@ -4,10 +4,13 @@ import { NavComponent } from './nav.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-import { MatSlideToggleModule, _MatSlideToggleRequiredValidatorModule } from '@angular/material/slide-toggle';
-import {MatCardModule} from '@angular/material/card';
+import {
+  MatSlideToggleModule,
+  _MatSlideToggleRequiredValidatorModule,
+} from '@angular/material/slide-toggle';
+import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
-import { Router, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [NavComponent],
@@ -20,11 +23,8 @@ import { Router, RouterModule } from '@angular/router';
     MatButtonModule,
     _MatSlideToggleRequiredValidatorModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
   ],
   exports: [NavComponent],
 })
-export class NavModule {
-
-
-}
+export class NavModule {}

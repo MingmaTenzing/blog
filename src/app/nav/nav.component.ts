@@ -8,6 +8,7 @@ import {
   fadeOutUpOnLeaveAnimation,
 } from 'angular-animations';
 import { FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -19,7 +20,10 @@ import { FormControl } from '@angular/forms';
   ],
 })
 export class NavComponent implements OnInit {
-  constructor(private darkmode: DarkmodeService) {}
+  constructor(
+    private darkmode: DarkmodeService,
+    private navigateRoute: Router
+  ) {}
   isModalOpen: boolean = false;
   theme: boolean = false;
   ngOnInit(): void {
@@ -33,5 +37,10 @@ export class NavComponent implements OnInit {
     this.isModalOpen = !this.isModalOpen;
 
     console.log(this.isModalOpen);
+  }
+
+  routePath(path: string) {
+    this.isModalOpen = false;
+    this.navigateRoute.navigate([path]);
   }
 }
