@@ -8,17 +8,15 @@ import { Observable } from 'rxjs';
   templateUrl: './recentblogs.component.html',
   styleUrls: ['./recentblogs.component.css'],
 })
-export class RecentblogsComponent{
-  
-blog$ = inject(SanityService).getAllPosts();
+export class RecentblogsComponent {
+  blog$ = inject(SanityService).getAllPosts();
 
- number: number = 1;
+  number: number = 1;
 
   // async getPosts(): Promise<Blog[]>  {
   //   this.loading = true;
   //    this.blog = await this.sanityService.getAllPosts();
 
-  //    console.log(this.blog);
   //    this.loading=false;
   //    return this.blog;
 
