@@ -3,13 +3,11 @@ import { SanityImagePipe } from './sanity-image.pipe';
 import { PortableTextComponents, toHTML } from '@portabletext/to-html';
 import { PortableTextBlock } from '@portabletext/types';
 
-
 @Pipe({
   name: 'portableText',
-  
 })
 export class PortableTextPipe implements PipeTransform {
-  constructor(private sanityImagePipe: SanityImagePipe){}
+  constructor(private sanityImagePipe: SanityImagePipe) {}
 
   components: PortableTextComponents = {
     types: {
@@ -35,7 +33,7 @@ export class PortableTextPipe implements PipeTransform {
     },
 
     list: {
-      bullet: ({ children }) => ` <ul class="list-disc">${children} </ul>`,
+      bullet: ({ children }) => ` <ul class=" m-6 list-disc">${children} </ul>`,
     },
   };
   transform(value: PortableTextBlock[]): string {

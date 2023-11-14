@@ -1,7 +1,15 @@
-<div  class="p-4 md:py-8 justify-between flex items-center">
-  <div routerLink="/"  routerLinkActive="router-link-active"  class=" cursor-pointer flex items-center space-x-1">
-    <p class=" md:text-lg  text-sm font-light ">Powered By </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" width="40px" class=" w-[32px] md:w-[40px]" />
+<div class="p-4 md:py-8 justify-between flex items-center">
+  <div
+    routerLink="/"
+    routerLinkActive="router-link-active"
+    class="cursor-pointer flex items-center space-x-1"
+  >
+    <p class="md:text-lg text-sm font-light">Powered By</p>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
+      width="40px"
+      class="w-[32px] md:w-[40px]"
+    />
   </div>
   <div class="md:hidden">
     <button
@@ -14,24 +22,44 @@
     </button>
   </div>
   <div class="hidden md:flex items-center space-x-6 text-lg">
-    <p class=" cursor-pointer">Blog</p>
-    <p class=" cursor-pointer">Projects</p>
-    <p class=" cursor-pointer">About</p>
-    <p class=" cursor-pointer">Newsletter</p>
-
+    <a
+      target="_blank"
+      href="https://www.mingmatenzing.com/#projects"
+      class="cursor-pointer opacity-50 hover:opacity-100"
+    >
+      Projects
+    </a>
+    <a
+      href="https://www.mingmatenzing.com/#about"
+      target="_blank"
+      class="opacity-50 hover:opacity-100 cursor-pointer"
+      >About</a
+    >
   </div>
 
-  <div *ngIf="isModalOpen" [@fadeInDownOnEnter]  [@fadeOutUpOnLeave] class="absolute top-0 bg-[#121212] text-white h-[100vh] left-0 w-full">
+  <div
+    *ngIf="isModalOpen"
+    [@fadeInDownOnEnter]
+    [@fadeOutUpOnLeave]
+    class="absolute top-0 bg-[#121212] text-white h-[100vh] left-0 w-full"
+  >
     <div class="flex space-y-8 flex-col items-center justify-center h-full">
-      <p class=" text-lg cursor-pointer">Blog</p>
-      <p class=" text-lg cursor-pointer">Projects</p>
-      <p class=" text-lg cursor-pointer">About</p>
-      <p class=" text-lg cursor-pointer">Newsletter</p>
-
-      
+      <a
+        href="https://www.mingmatenzing.com/#projects"
+        target="_blank"
+        class="text-lg cursor-pointer"
+      >
+        Projects
+      </a>
+      <a
+        href="https://www.mingmatenzing.com/#about"
+        target="_blank"
+        class="text-lg cursor-pointer"
+        >About</a
+      >
     </div>
-    <span class=" absolute  top-0  right-0 ">
-      <p  class=" p-8 text-2xl uppercase"  (click)="changeModalState()">x</p>
+    <span class="absolute top-0 right-0">
+      <p class="p-8 text-2xl uppercase" (click)="changeModalState()">x</p>
     </span>
   </div>
 </div>

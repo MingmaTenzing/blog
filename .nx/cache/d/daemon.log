@@ -1,0 +1,5 @@
+[NX Daemon Server] - 2023-11-13T23:49:12.734Z - Started listening on: \\.\pipe\nx\C:\Users\pasan\AppData\Local\Temp\b783b682727c31ea0246\d.sock
+[NX Daemon Server] - 2023-11-13T23:49:12.740Z - [WATCHER]: Subscribed to changes within: c:\Users\pasan\blog (native)
+[NX Daemon Server] - 2023-11-13T23:49:12.745Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-13T23:49:12.747Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-13T23:49:12.748Z - Closed a connection. Number of open connections: 1
