@@ -1,0 +1,15 @@
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m          [2m | [22m[1mNames[22m                   [2m | [22m [1mRaw Size[22m[2m | [22m[1mEstimated Transfer Size[22m[0m[39m
+[37m[0m[92mmain.14e1aa45bd0e00d1.js[39m[37m     [2m | [22mmain                    [2m | [22m[96m466.40 kB[39m[37m[2m | [22m              [96m123.09 kB[39m[37m[0m[39m
+[37m[0m[92mstyles.3698108e68a9e8b3.css[39m[37m  [2m | [22mstyles                  [2m | [22m [96m74.51 kB[39m[37m[2m | [22m                [96m8.56 kB[39m[37m[0m[39m
+[37m[0m[92mpolyfills.9dde834dded26d24.js[39m[37m[2m | [22mpolyfills               [2m | [22m [96m33.02 kB[39m[37m[2m | [22m               [96m10.67 kB[39m[37m[0m[39m
+[37m[0m[92mruntime.36b58fb2edbb2bdd.js[39m[37m  [2m | [22mruntime                 [2m | [22m  [96m3.18 kB[39m[37m[2m | [22m                [96m1.49 kB[39m[37m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1m [22m                            [2m | [22m[1mInitial Total[22m           [2m | [22m[1m[93m577.12 kB[39m[37m[22m[2m | [22m              [1m143.81 kB[22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m             [2m | [22m[1mNames[22m                   [2m | [22m [1mRaw Size[22m[2m | [22m[1mEstimated Transfer Size[22m[0m[39m
+[37m[0m[92m814.53ea20144e9a1075.js[39m[37m      [2m | [22mpost-post-module        [2m | [22m [96m15.92 kB[39m[37m[2m | [22m                [96m4.78 kB[39m[37m[0m[39m
+[37m[0m[92m906.ef62b02e4a19883b.js[39m[37m      [2m | [22msanity-eventsource      [2m | [22m [96m11.84 kB[39m[37m[2m | [22m                [96m4.13 kB[39m[37m[0m[39m
+[37m[0m[92m391.836d0cd3281c0cbc.js[39m[37m      [2m | [22mcategory-category-module[2m | [22m  [96m7.35 kB[39m[37m[2m | [22m                [96m2.25 kB[39m[37m[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-26T08:04:22.736Z[39m[37m[22m - Hash: [1m[37m8bd1b07f954619e6[39m[37m[22m - Time: [1m[37m30695[39m[37m[22mms[0m[39m

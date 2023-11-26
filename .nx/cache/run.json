@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx build",
+    "startTime": "2023-11-26T08:03:47.747Z",
+    "endTime": "2023-11-26T08:04:23.050Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "blog:build:production",
+      "target": "build",
+      "projectName": "blog",
+      "hash": "1268958310212375925",
+      "startTime": "2023-11-26T08:03:47.759Z",
+      "endTime": "2023-11-26T08:04:23.049Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

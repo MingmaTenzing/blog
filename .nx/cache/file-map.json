@@ -36,6 +36,7 @@
     "@types/node": "^16.11.7",
     "@types/progress-stream": "^2.0.3",
     "autoprefixer": "^10.4.16",
+    "cypress": "^13.5.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -51,6 +52,7 @@
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
+    "nonProjectFiles": [],
     "projectFileMap": {
       "blog": [
         {
@@ -290,23 +292,31 @@
         },
         {
           "file": ".nx/cache/d/daemon.log",
-          "hash": "17365553336522630472"
+          "hash": "4629358903433860173"
+        },
+        {
+          "file": ".nx/cache/d/server-process.json",
+          "hash": "12179685504007564051"
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "6470031518275439050"
+          "hash": "948624419618391156"
         },
         {
           "file": ".nx/cache/lockfile.hash",
-          "hash": "12084969857166119158"
+          "hash": "6795351059330605976"
         },
         {
           "file": ".nx/cache/parsed-lock-file.json",
-          "hash": "586213348134894772"
+          "hash": "14377974953938345039"
         },
         {
           "file": ".nx/cache/project-graph.json",
-          "hash": "2094226492141291809"
+          "hash": "14563091160432873805"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/16296470665310291340",
+          "hash": "18210004201220538434"
         },
         {
           "file": ".nx/cache/terminalOutputs/7138006743586702625",
@@ -329,12 +339,162 @@
           "hash": "2609021279086035909"
         },
         {
+          "file": "cypress/e2e/1-getting-started/todo.cy.js",
+          "hash": "2818232569560774082"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/actions.cy.js",
+          "hash": "315860228949534686"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/aliasing.cy.js",
+          "hash": "18311887177345868414"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/assertions.cy.js",
+          "hash": "6207496575180533741"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/connectors.cy.js",
+          "hash": "59034261821968830"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/cookies.cy.js",
+          "hash": "1591115306807635348"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/cypress_api.cy.js",
+          "hash": "15694055627211626844"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/files.cy.js",
+          "hash": "17949351610885233640"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/location.cy.js",
+          "hash": "8376870708802352719"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/misc.cy.js",
+          "hash": "364464130497919824"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/navigation.cy.js",
+          "hash": "2701621596507220689"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/network_requests.cy.js",
+          "hash": "7651982888087817208"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/querying.cy.js",
+          "hash": "1048162773914822673"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/spies_stubs_clocks.cy.js",
+          "hash": "8523860377086252753"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/storage.cy.js",
+          "hash": "9162376066720865403"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/traversal.cy.js",
+          "hash": "15067570857743405968"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/utilities.cy.js",
+          "hash": "12716440575010080483"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/viewport.cy.js",
+          "hash": "16488292178644517657"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/waiting.cy.js",
+          "hash": "5324560285338190932"
+        },
+        {
+          "file": "cypress/e2e/2-advanced-examples/window.cy.js",
+          "hash": "5244387326083010912"
+        },
+        {
+          "file": "cypress/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "cypress/support/commands.ts",
+          "hash": "9883532909609567882"
+        },
+        {
+          "file": "cypress/support/e2e.ts",
+          "hash": "9400169756472368457"
+        },
+        {
+          "file": "cypress.config.ts",
+          "hash": "782018314816682497",
+          "deps": [
+            "npm:cypress"
+          ]
+        },
+        {
           "file": "nx.json",
           "hash": "17912108109997266654"
         },
         {
+          "file": "package-lock.json",
+          "hash": "14417099881020947110"
+        },
+        {
           "file": "package.json",
-          "hash": "4504326186922001315"
+          "hash": "15735792258642230201",
+          "deps": [
+            "npm:@angular/animations",
+            "npm:@angular/cdk",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/material",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/platform-server",
+            "npm:@angular/router",
+            "npm:@dimaslz/ng-heroicons",
+            "npm:@portabletext/to-html",
+            "npm:@sanity/client",
+            "npm:@sanity/image-url",
+            "npm:angular-animations",
+            "npm:moment",
+            "npm:ngx-skeleton-loader",
+            "npm:rxjs",
+            "npm:tailwind-scrollbar-hide",
+            "npm:tslib",
+            "npm:zone.js",
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular-devkit/core",
+            "npm:@angular-devkit/schematics",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@nx/angular",
+            "npm:@nx/workspace",
+            "npm:@schematics/angular",
+            "npm:@types/jasmine",
+            "npm:@types/node",
+            "npm:@types/progress-stream",
+            "npm:autoprefixer",
+            "npm:jasmine-core",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:typescript"
+          ]
         },
         {
           "file": "project.json",
@@ -342,7 +502,11 @@
         },
         {
           "file": "src/app/app-routing.module.ts",
-          "hash": "97209264395210762"
+          "hash": "97209264395210762",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/app.component.css",
@@ -354,15 +518,30 @@
         },
         {
           "file": "src/app/app.component.spec.ts",
-          "hash": "5749405381869220896"
+          "hash": "5749405381869220896",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "8085149117853580453"
+          "hash": "8085149117853580453",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "15039535621284968741"
+          "hash": "15039535621284968741",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@angular/forms",
+            "npm:ngx-skeleton-loader"
+          ]
         },
         {
           "file": "src/app/assests/Microsoft.jpg",
@@ -370,7 +549,11 @@
         },
         {
           "file": "src/app/category/category-routing.module.ts",
-          "hash": "5880839524847032623"
+          "hash": "5880839524847032623",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/category/category.component.css",
@@ -382,15 +565,29 @@
         },
         {
           "file": "src/app/category/category.component.spec.ts",
-          "hash": "5102902587826137585"
+          "hash": "5102902587826137585",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/category/category.component.ts",
-          "hash": "6185904373878314954"
+          "hash": "6185904373878314954",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:@angular/platform-browser"
+          ]
         },
         {
           "file": "src/app/category/category.module.ts",
-          "hash": "11389632461032790990"
+          "hash": "11389632461032790990",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@dimaslz/ng-heroicons"
+          ]
         },
         {
           "file": "src/app/header/header.component.css",
@@ -402,15 +599,25 @@
         },
         {
           "file": "src/app/header/header.component.spec.ts",
-          "hash": "14465742688965997085"
+          "hash": "14465742688965997085",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/header/header.component.ts",
-          "hash": "13593037929272246018"
+          "hash": "13593037929272246018",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/header/header.module.ts",
-          "hash": "6398155918476896408"
+          "hash": "6398155918476896408",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
         },
         {
           "file": "src/app/home/all-blog-posts/all-blog-posts.component.css",
@@ -422,11 +629,19 @@
         },
         {
           "file": "src/app/home/all-blog-posts/all-blog-posts.component.spec.ts",
-          "hash": "1365769367922708824"
+          "hash": "1365769367922708824",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/home/all-blog-posts/all-blog-posts.component.ts",
-          "hash": "6138132436023017351"
+          "hash": "6138132436023017351",
+          "deps": [
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/home/home-loading/home-loading.component.css",
@@ -438,11 +653,17 @@
         },
         {
           "file": "src/app/home/home-loading/home-loading.component.spec.ts",
-          "hash": "2269885686550642652"
+          "hash": "2269885686550642652",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/home/home-loading/home-loading.component.ts",
-          "hash": "15826833247322278227"
+          "hash": "15826833247322278227",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/home/home.component.css",
@@ -454,15 +675,28 @@
         },
         {
           "file": "src/app/home/home.component.spec.ts",
-          "hash": "17251428766814914771"
+          "hash": "17251428766814914771",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/home/home.component.ts",
-          "hash": "15824836162956493577"
+          "hash": "15824836162956493577",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/home/home.module.ts",
-          "hash": "14845232181957820186"
+          "hash": "14845232181957820186",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:ngx-skeleton-loader"
+          ]
         },
         {
           "file": "src/app/home/recentblogs/recentblogs.component.css",
@@ -474,19 +708,32 @@
         },
         {
           "file": "src/app/home/recentblogs/recentblogs.component.spec.ts",
-          "hash": "5390175785288587044"
+          "hash": "5390175785288587044",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/home/recentblogs/recentblogs.component.ts",
-          "hash": "4773909125199535459"
+          "hash": "8892749759498398899",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/nav/darkmode.service.spec.ts",
-          "hash": "12351007542474324295"
+          "hash": "12351007542474324295",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/nav/darkmode.service.ts",
-          "hash": "3583040065501875699"
+          "hash": "3583040065501875699",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/nav/nav.component.css",
@@ -498,15 +745,30 @@
         },
         {
           "file": "src/app/nav/nav.component.spec.ts",
-          "hash": "4243342053266521453"
+          "hash": "4243342053266521453",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/nav/nav.component.ts",
-          "hash": "16073965108890070947"
+          "hash": "4715624101199361826",
+          "deps": [
+            "npm:@angular/core",
+            "npm:angular-animations",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/nav/nav.module.ts",
-          "hash": "11780327666297706805"
+          "hash": "11780327666297706805",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/material",
+            "npm:@angular/forms",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/post/post-loading/post-loading.component.css",
@@ -518,15 +780,25 @@
         },
         {
           "file": "src/app/post/post-loading/post-loading.component.spec.ts",
-          "hash": "13081331546407095535"
+          "hash": "13081331546407095535",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/post/post-loading/post-loading.component.ts",
-          "hash": "8754458883026674403"
+          "hash": "8754458883026674403",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/post/post-routing.module.ts",
-          "hash": "16082621204690112328"
+          "hash": "16082621204690112328",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/post/post.component.css",
@@ -538,19 +810,38 @@
         },
         {
           "file": "src/app/post/post.component.spec.ts",
-          "hash": "11664184818528565819"
+          "hash": "11664184818528565819",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/post/post.component.ts",
-          "hash": "80777254093564193"
+          "hash": "4557770765922815478",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/platform-browser",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/post/post.module.ts",
-          "hash": "8504761816598628878"
+          "hash": "8504761816598628878",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:ngx-skeleton-loader"
+          ]
         },
         {
           "file": "src/app/sanity/portable-text.pipe.ts",
-          "hash": "17735781675055572495"
+          "hash": "17735781675055572495",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@portabletext/to-html",
+            "npm:@portabletext/types"
+          ]
         },
         {
           "file": "src/app/sanity/sanity-image.pipe.ts",
@@ -561,7 +852,10 @@
         },
         {
           "file": "src/app/sanity/sanity.service.spec.ts",
-          "hash": "5514293774577982855"
+          "hash": "5514293774577982855",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/sanity/sanity.service.ts",
@@ -573,7 +867,10 @@
         },
         {
           "file": "src/app/sanity/types.ts",
-          "hash": "3590689887918916790"
+          "hash": "3590689887918916790",
+          "deps": [
+            "npm:@portabletext/types"
+          ]
         },
         {
           "file": "src/app/small-components/blog-container/blog-container.component.css",
@@ -585,15 +882,26 @@
         },
         {
           "file": "src/app/small-components/blog-container/blog-container.component.spec.ts",
-          "hash": "9843602156700596809"
+          "hash": "9843602156700596809",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/small-components/blog-container/blog-container.component.ts",
-          "hash": "338586653279898812"
+          "hash": "338586653279898812",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/small-components/blog-container/blog-container.module.ts",
-          "hash": "3373121381431292928"
+          "hash": "3373121381431292928",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/small-components/blog-loading/blog-loading.component.css",
@@ -605,15 +913,26 @@
         },
         {
           "file": "src/app/small-components/blog-loading/blog-loading.component.spec.ts",
-          "hash": "8815560062427023767"
+          "hash": "8815560062427023767",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/small-components/blog-loading/blog-loading.component.ts",
-          "hash": "582418586360917355"
+          "hash": "582418586360917355",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/small-components/blog-loading/blog-loading.module.ts",
-          "hash": "12774519080704703628"
+          "hash": "12774519080704703628",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:ngx-skeleton-loader"
+          ]
         },
         {
           "file": "src/assets/.gitkeep",
@@ -637,7 +956,10 @@
         },
         {
           "file": "src/main.ts",
-          "hash": "9374417435436826166"
+          "hash": "9374417435436826166",
+          "deps": [
+            "npm:@angular/platform-browser-dynamic"
+          ]
         },
         {
           "file": "src/styles.css",
@@ -645,7 +967,10 @@
         },
         {
           "file": "tailwind.config.js",
-          "hash": "1274921310359205410"
+          "hash": "1274921310359205410",
+          "deps": [
+            "npm:tailwind-scrollbar-hide"
+          ]
         },
         {
           "file": "tsconfig.app.json",
@@ -658,9 +983,72 @@
         {
           "file": "tsconfig.spec.json",
           "hash": "5122839733245053999"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/1268958310212375925",
+          "hash": "18386435635255238653"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/runtime.36b58fb2edbb2bdd.js",
+          "hash": "15226166800612735731"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/index.html",
+          "hash": "6790688440101616287"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/main.14e1aa45bd0e00d1.js",
+          "hash": "13591564769705866496"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/favicon.ico",
+          "hash": "10512333557955229223"
+        },
+        {
+          "file": ".nx/cache/run.json",
+          "hash": "1502191577314736119"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/code",
+          "hash": "1838281907459330133"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/source",
+          "hash": "15359586054786061125"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/styles.3698108e68a9e8b3.css",
+          "hash": "16013479908778082825"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/906.ef62b02e4a19883b.js",
+          "hash": "3737491073414709253"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/391.836d0cd3281c0cbc.js",
+          "hash": "1732788712698367558"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/814.53ea20144e9a1075.js",
+          "hash": "17704884881159519504"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/terminalOutput",
+          "hash": "18386435635255238653"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925.commit",
+          "hash": "4664556114322093609"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/3rdpartylicenses.txt",
+          "hash": "13545222057186101049"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/polyfills.9dde834dded26d24.js",
+          "hash": "1062800359246478345"
         }
       ]
-    },
-    "nonProjectFiles": []
+    }
   }
 }

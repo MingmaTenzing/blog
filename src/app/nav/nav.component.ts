@@ -1,13 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { DarkmodeService } from './darkmode.service';
 import {
-  fadeInDownAnimation,
   fadeInDownOnEnterAnimation,
-  fadeInOnEnterAnimation,
-  fadeOutOnLeaveAnimation,
   fadeOutUpOnLeaveAnimation,
 } from 'angular-animations';
-import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -19,7 +15,7 @@ import { Router } from '@angular/router';
     fadeOutUpOnLeaveAnimation({ duration: 200 }),
   ],
 })
-export class NavComponent implements OnInit {
+export class NavComponent {
   constructor(private darkmode: DarkmodeService, private router: Router) {}
   isModalOpen: boolean = false;
   theme: boolean = false;

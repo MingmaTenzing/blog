@@ -1,0 +1,120 @@
+[36m⠋[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96msrc/app/nav/nav.component.ts[0m:[93m22[0m:[93m14[0m - [91merror[0m[90m TS2420: [0mClass 'NavComponent' incorrectly implements interface 'OnInit'.[39m[22m
+[1m[31m  Property 'ngOnInit' is missing in type 'NavComponent' but required in type 'OnInit'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m22[0m export class NavComponent implements OnInit {[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mnode_modules/@angular/core/index.d.ts[0m:[93m6454[0m:[93m5[0m[39m[22m
+[1m[31m    [7m6454[0m     ngOnInit(): void;[39m[22m
+[1m[31m    [7m    [0m [96m    ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'ngOnInit' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m14 11 2023 10:09:31.824:WARN [karma]: [39mNo captured browser, open http://localhost:9876/
+[32m14 11 2023 10:09:31.863:INFO [karma-server]: [39mKarma v6.4.2 server started at http://localhost:9876/
+[32m14 11 2023 10:09:31.864:INFO [launcher]: [39mLaunching browsers Chrome with concurrency unlimited
+[32m14 11 2023 10:09:31.872:INFO [launcher]: [39mStarting browser Chrome
+[32m14 11 2023 10:09:35.005:INFO [Chrome 119.0.0.0 (Windows 10)]: [39mConnected on socket p5ik9S_IH7kST9UfAAAB with id 49993215
+[33m14 11 2023 10:09:35.284:WARN [web-server]: [39m404: /_karma_webpack_/main.js
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KChrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.001 secs / 0 secs)
+[32mTOTAL: 0 SUCCESS[39m
+[1A[2K[31mChrome 119.0.0.0 (Windows 10) ERROR[39m
+  Some of your tests did a full page reload!
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.001 secs / 0 secs)
+Chrome 119.0.0.0 (Windows 10) ERROR
+  Some of your tests did a full page reload!
+[33m14 11 2023 10:09:41.682:WARN [Chrome 119.0.0.0 (Windows 10)]: [39mDisconnected (0 times) Client disconnected from CONNECTED state (transport close)
+[1A[2K[31mChrome 119.0.0.0 (Windows 10) ERROR[39m
+  Disconnected Client disconnected from CONNECTED state (transport close)
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.001 secs / 0 secs)
+Chrome 119.0.0.0 (Windows 10) ERROR
+  Disconnected Client disconnected from CONNECTED state (transport close)
+[91m14 11 2023 10:09:42.066:ERROR [launcher]: [39mChrome crashed.
+	
+[91m14 11 2023 10:09:42.067:ERROR [launcher]: [39mChrome stdout: 
+[91m14 11 2023 10:09:42.069:ERROR [launcher]: [39mChrome stderr: 
+[32m14 11 2023 10:09:42.214:INFO [launcher]: [39mTrying to start Chrome again (1/2).
+[32m14 11 2023 10:09:43.217:INFO [Chrome 119.0.0.0 (Windows 10)]: [39mConnected on socket nOfAl63DM2ndPUhaAAAD with id 49993215
+[33m14 11 2023 10:09:43.370:WARN [web-server]: [39m404: /_karma_webpack_/main.js
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KChrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.024 secs / 0 secs)
+[32mTOTAL: 0 SUCCESS[39m
+[33m14 11 2023 10:09:47.827:WARN [web-server]: [39m404: /_karma_webpack_/main.js
+[1A[2K[31mChrome 119.0.0.0 (Windows 10) ERROR[39m
+  Some of your tests did a full page reload!
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.024 secs / 0 secs)
+Chrome 119.0.0.0 (Windows 10) ERROR
+  Some of your tests did a full page reload!
+[33m14 11 2023 10:09:58.616:WARN [Chrome 119.0.0.0 (Windows 10)]: [39mDisconnected (0 times) Client disconnected from CONNECTED state (transport close)
+[1A[2K[31mChrome 119.0.0.0 (Windows 10) ERROR[39m
+  Disconnected Client disconnected from CONNECTED state (transport close)
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.024 secs / 0 secs)
+Chrome 119.0.0.0 (Windows 10) ERROR
+  Disconnected Client disconnected from CONNECTED state (transport close)
+[32m14 11 2023 10:09:58.656:INFO [Chrome 119.0.0.0 (Windows 10)]: [39mConnected on socket 27n4wjL31YZ26y-IAAAF with id 49993215
+[33m14 11 2023 10:09:58.690:WARN [web-server]: [39m404: /_karma_webpack_/main.js
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KChrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.005 secs / 0 secs)
+[32mTOTAL: 0 SUCCESS[39m
+[1A[2K[31mChrome 119.0.0.0 (Windows 10) ERROR[39m
+  Some of your tests did a full page reload!
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.005 secs / 0 secs)
+Chrome 119.0.0.0 (Windows 10) ERROR
+  Some of your tests did a full page reload!
+[33m14 11 2023 10:10:09.636:WARN [Chrome 119.0.0.0 (Windows 10)]: [39mDisconnected (0 times) Client disconnected from CONNECTED state (transport close)
+[1A[2K[31mChrome 119.0.0.0 (Windows 10) ERROR[39m
+  Disconnected Client disconnected from CONNECTED state (transport close)
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.005 secs / 0 secs)
+Chrome 119.0.0.0 (Windows 10) ERROR
+  Disconnected Client disconnected from CONNECTED state (transport close)
+[91m14 11 2023 10:10:10.119:ERROR [launcher]: [39mChrome crashed.
+	
+[91m14 11 2023 10:10:10.120:ERROR [launcher]: [39mChrome stdout: 
+[91m14 11 2023 10:10:10.120:ERROR [launcher]: [39mChrome stderr: 
+[32m14 11 2023 10:10:10.257:INFO [launcher]: [39mTrying to start Chrome again (2/2).
+[32m14 11 2023 10:10:11.131:INFO [Chrome 119.0.0.0 (Windows 10)]: [39mConnected on socket DkZHbhmS6JaPQLNOAAAH with id 49993215
+[33m14 11 2023 10:10:11.221:WARN [web-server]: [39m404: /_karma_webpack_/main.js
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KChrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.018 secs / 0 secs)
+[32mTOTAL: 0 SUCCESS[39m
+[33m14 11 2023 10:10:11.660:WARN [Chrome 119.0.0.0 (Windows 10)]: [39mDisconnected (1 times) , because no message in 30000 ms.
+[1A[2K[31mChrome 119.0.0.0 (Windows 10) ERROR[39m
+  Disconnected , because no message in 30000 ms.
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.018 secs / 0 secs)
+Chrome 119.0.0.0 (Windows 10) ERROR
+  Disconnected , because no message in 30000 ms.
+[1A[2KChrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.018 secs / 0 secs)
+[33m14 11 2023 10:10:26.778:WARN [Chrome 119.0.0.0 (Windows 10)]: [39mDisconnected (1 times) , because no message in 30000 ms.
+[1A[2K[31mChrome 119.0.0.0 (Windows 10) ERROR[39m
+  Disconnected , because no message in 30000 ms.
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.018 secs / 0 secs)
+Chrome 119.0.0.0 (Windows 10) ERROR
+  Disconnected , because no message in 30000 ms.
+[1A[2KChrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.018 secs / 0 secs)
+[33m14 11 2023 10:10:38.350:WARN [Chrome 119.0.0.0 (Windows 10)]: [39mDisconnected (1 times) , because no message in 30000 ms.
+[1A[2K[31mChrome 119.0.0.0 (Windows 10) ERROR[39m
+  Disconnected , because no message in 30000 ms.
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.018 secs / 0 secs)
+Chrome 119.0.0.0 (Windows 10) ERROR
+  Disconnected , because no message in 30000 ms.
+[1A[2KChrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.018 secs / 0 secs)
+[1A[2K[31mChrome 119.0.0.0 (Windows 10) ERROR[39m
+  Some of your tests did a full page reload!
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.018 secs / 0 secs)
+Chrome 119.0.0.0 (Windows 10) ERROR
+  Some of your tests did a full page reload!
+[33m14 11 2023 10:10:56.469:WARN [Chrome 119.0.0.0 (Windows 10)]: [39mDisconnected (0 times) Client disconnected from CONNECTED state (transport close)
+[1A[2K[31mChrome 119.0.0.0 (Windows 10) ERROR[39m
+  Disconnected Client disconnected from CONNECTED state (transport close)
+Chrome 119.0.0.0 (Windows 10): Executed 0 of 0[32m SUCCESS[39m (0.018 secs / 0 secs)
+Chrome 119.0.0.0 (Windows 10) ERROR
+  Disconnected Client disconnected from CONNECTED state (transport close)
+[91m14 11 2023 10:10:57.088:ERROR [launcher]: [39mChrome crashed.
+	
+[91m14 11 2023 10:10:57.090:ERROR [launcher]: [39mChrome stdout: 
+[91m14 11 2023 10:10:57.091:ERROR [launcher]: [39mChrome stderr: 
+[91m14 11 2023 10:10:57.236:ERROR [launcher]: [39mChrome failed 2 times (crashed). Giving up.

@@ -46,6 +46,7 @@
     "@types/node": "^16.11.7",
     "@types/progress-stream": "^2.0.3",
     "autoprefixer": "^10.4.16",
+    "cypress": "^13.5.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
