@@ -64,6 +64,170 @@
           "hash": "4689145951703824387"
         },
         {
+          "file": ".nx/cache/1268958310212375925/code",
+          "hash": "1838281907459330133"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/391.836d0cd3281c0cbc.js",
+          "hash": "1732788712698367558"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/3rdpartylicenses.txt",
+          "hash": "13545222057186101049"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/814.53ea20144e9a1075.js",
+          "hash": "17704884881159519504"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/906.ef62b02e4a19883b.js",
+          "hash": "3737491073414709253"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/favicon.ico",
+          "hash": "10512333557955229223"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/index.html",
+          "hash": "6790688440101616287"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/main.14e1aa45bd0e00d1.js",
+          "hash": "13591564769705866496"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/polyfills.9dde834dded26d24.js",
+          "hash": "1062800359246478345"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/runtime.36b58fb2edbb2bdd.js",
+          "hash": "15226166800612735731"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/outputs/dist/styles.3698108e68a9e8b3.css",
+          "hash": "16013479908778082825"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/source",
+          "hash": "15359586054786061125"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925/terminalOutput",
+          "hash": "18386435635255238653"
+        },
+        {
+          "file": ".nx/cache/1268958310212375925.commit",
+          "hash": "4664556114322093609"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/code",
+          "hash": "1838281907459330133"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/391.e4d13057b98615e5.js",
+          "hash": "14746795637360318959"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/3rdpartylicenses.txt",
+          "hash": "2388302682070699556"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/814.adad9c32c090cf70.js",
+          "hash": "11564670824031443545"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/906.ef62b02e4a19883b.js",
+          "hash": "3737491073414709253"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/assets/icons/icon-128x128.png",
+          "hash": "16119513566521364320"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/assets/icons/icon-144x144.png",
+          "hash": "7918264055681161054"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/assets/icons/icon-152x152.png",
+          "hash": "15801439294603939434"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/assets/icons/icon-192x192.png",
+          "hash": "5426725225393538606"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/assets/icons/icon-384x384.png",
+          "hash": "14349113523743396697"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/assets/icons/icon-512x512.png",
+          "hash": "15496412176428542718"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/assets/icons/icon-72x72.png",
+          "hash": "8211841038932698272"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/assets/icons/icon-96x96.png",
+          "hash": "17857169027528193372"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/favicon.ico",
+          "hash": "10512333557955229223"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/index.html",
+          "hash": "3333691428201916014"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/main.7cd31c8d081ff713.js",
+          "hash": "6163310882253411050"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/manifest.webmanifest",
+          "hash": "16886130101056586890"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/ngsw-worker.js",
+          "hash": "491459725830806434"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/ngsw.json",
+          "hash": "6745768051932938190"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/polyfills.9dde834dded26d24.js",
+          "hash": "1062800359246478345"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/runtime.344c048365a70206.js",
+          "hash": "5822242454854385048"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/safety-worker.js",
+          "hash": "16035108511120494094"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/styles.3698108e68a9e8b3.css",
+          "hash": "16013479908778082825"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/outputs/dist/worker-basic.min.js",
+          "hash": "16035108511120494094"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/source",
+          "hash": "15359586054786061125"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253/terminalOutput",
+          "hash": "773475306874548521"
+        },
+        {
+          "file": ".nx/cache/8347927600435206253.commit",
+          "hash": "4664556114322093609"
+        },
+        {
           "file": ".nx/cache/cloud/2311.09.8.hotfix3/index.js",
           "hash": "6506150100940448045",
           "deps": [
@@ -292,35 +456,91 @@
         },
         {
           "file": ".nx/cache/d/daemon.log",
-          "hash": "4629358903433860173"
+          "hash": "1541286634401335155"
         },
         {
           "file": ".nx/cache/d/server-process.json",
-          "hash": "12179685504007564051"
+          "hash": "5164196349507026337"
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "948624419618391156"
+          "hash": "15013610847831077369"
         },
         {
           "file": ".nx/cache/lockfile.hash",
           "hash": "6795351059330605976"
         },
         {
+          "file": ".nx/cache/nx-console-project-graph/project-graph.html",
+          "hash": "17036869540637447991"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/3rdpartylicenses.txt",
+          "hash": "5837776511381456081"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/environment.js",
+          "hash": "3841050965383883667"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/favicon.ico",
+          "hash": "3647159322028580521"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/main.js",
+          "hash": "17346266655804028932"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/polyfills.js",
+          "hash": "9671163675834296901"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/runtime.js",
+          "hash": "11048758356416049884"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/styles.css",
+          "hash": "16505386498828632013"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/styles.js",
+          "hash": "1147408372162918917"
+        },
+        {
           "file": ".nx/cache/parsed-lock-file.json",
-          "hash": "14377974953938345039"
+          "hash": "2624876457053342132"
         },
         {
           "file": ".nx/cache/project-graph.json",
-          "hash": "14563091160432873805"
+          "hash": "8694858042106482967"
+        },
+        {
+          "file": ".nx/cache/run.json",
+          "hash": "2691366948341756580"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/1268958310212375925",
+          "hash": "18386435635255238653"
         },
         {
           "file": ".nx/cache/terminalOutputs/16296470665310291340",
           "hash": "18210004201220538434"
         },
         {
+          "file": ".nx/cache/terminalOutputs/4146881312774835920",
+          "hash": "16367076560583081083"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/4699318737937703468",
+          "hash": "304286812350609988"
+        },
+        {
           "file": ".nx/cache/terminalOutputs/7138006743586702625",
           "hash": "7947110794719273873"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/8347927600435206253",
+          "hash": "773475306874548521"
         },
         {
           "file": ".vscode/extensions.json",
@@ -483,6 +703,7 @@
             "npm:@types/node",
             "npm:@types/progress-stream",
             "npm:autoprefixer",
+            "npm:cypress",
             "npm:jasmine-core",
             "npm:karma",
             "npm:karma-chrome-launcher",
@@ -847,7 +1068,8 @@
           "file": "src/app/sanity/sanity-image.pipe.ts",
           "hash": "10895148616697567208",
           "deps": [
-            "npm:@sanity/image-url/lib/types/types"
+            "npm:@angular/core",
+            "npm:@sanity/image-url"
           ]
         },
         {
@@ -861,8 +1083,11 @@
           "file": "src/app/sanity/sanity.service.ts",
           "hash": "15203837986028375812",
           "deps": [
-            "npm:@sanity/image-url/lib/types/builder",
-            "npm:@sanity/image-url/lib/types/types"
+            "npm:@angular/core",
+            "npm:@sanity/image-url",
+            "npm:@angular/common",
+            "npm:@sanity/client",
+            "npm:rxjs"
           ]
         },
         {
@@ -952,7 +1177,7 @@
         },
         {
           "file": "src/index.html",
-          "hash": "2292057160856956553"
+          "hash": "6024175961282255532"
         },
         {
           "file": "src/main.ts",
@@ -983,70 +1208,6 @@
         {
           "file": "tsconfig.spec.json",
           "hash": "5122839733245053999"
-        },
-        {
-          "file": ".nx/cache/terminalOutputs/1268958310212375925",
-          "hash": "18386435635255238653"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/outputs/dist/runtime.36b58fb2edbb2bdd.js",
-          "hash": "15226166800612735731"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/outputs/dist/index.html",
-          "hash": "6790688440101616287"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/outputs/dist/main.14e1aa45bd0e00d1.js",
-          "hash": "13591564769705866496"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/outputs/dist/favicon.ico",
-          "hash": "10512333557955229223"
-        },
-        {
-          "file": ".nx/cache/run.json",
-          "hash": "1502191577314736119"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/code",
-          "hash": "1838281907459330133"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/source",
-          "hash": "15359586054786061125"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/outputs/dist/styles.3698108e68a9e8b3.css",
-          "hash": "16013479908778082825"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/outputs/dist/906.ef62b02e4a19883b.js",
-          "hash": "3737491073414709253"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/outputs/dist/391.836d0cd3281c0cbc.js",
-          "hash": "1732788712698367558"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/outputs/dist/814.53ea20144e9a1075.js",
-          "hash": "17704884881159519504"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/terminalOutput",
-          "hash": "18386435635255238653"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925.commit",
-          "hash": "4664556114322093609"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/outputs/dist/3rdpartylicenses.txt",
-          "hash": "13545222057186101049"
-        },
-        {
-          "file": ".nx/cache/1268958310212375925/outputs/dist/polyfills.9dde834dded26d24.js",
-          "hash": "1062800359246478345"
         }
       ]
     }
