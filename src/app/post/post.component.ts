@@ -32,6 +32,7 @@ export class PostComponent implements OnInit, OnDestroy {
     this.subscription = this.sanityService
       .getSinglePost(this.slug)
       .subscribe((data) => {
+        console.log(data);
         this.post = data;
         if (this.post) {
           this.title.setTitle(this.post.title);
