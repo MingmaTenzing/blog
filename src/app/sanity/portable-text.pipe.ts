@@ -15,6 +15,8 @@ export class PortableTextPipe implements PipeTransform {
         '<img loading="lazy" class="my-4 rounded-lg w-full h-[500px] object-cover  object-center" src="' +
         this.sanityImagePipe.transform(value, 900) +
         '"  />',
+      code: ({ value }: { value: any }) =>
+        `<blockquote class="my-4 border-l-4 pl-2 italic border-gray-400">${value.code}</blockquote>`,
     },
     marks: {},
     block: {
@@ -35,8 +37,6 @@ export class PortableTextPipe implements PipeTransform {
     list: {
       bullet: ({ children }) => ` <ul class=" m-6 list-disc">${children} </ul>`,
     },
-
-    code: {},
   };
   transform(value: PortableTextBlock[]): string {
     return toHTML(value, { components: this.components });

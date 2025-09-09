@@ -10,10 +10,10 @@ import { RouterModule } from '@angular/router';
 import { HomeModule } from './home/home.module';
 import { FormsModule } from '@angular/forms';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
-
+import { provideHighlightOptions } from 'ngx-highlightjs';
 
 @NgModule({
-  declarations: [AppComponent ],
+  declarations: [AppComponent],
   imports: [
     NavModule,
     BrowserAnimationsModule,
@@ -25,10 +25,12 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
     RouterModule,
     FormsModule,
     HomeModule,
-    
   ],
-  providers: [],
-
+  providers: [
+    provideHighlightOptions({
+      fullLibraryLoader: () => import('highlight.js'),
+    }),
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

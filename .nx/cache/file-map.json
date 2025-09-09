@@ -19,6 +19,7 @@
     "@sanity/image-url": "^1.0.2",
     "angular-animations": "^0.11.0",
     "moment": "^2.29.4",
+    "ngx-highlightjs": "^14.0.1",
     "ngx-skeleton-loader": "^8.1.0",
     "rxjs": "~7.8.0",
     "tailwind-scrollbar-hide": "^1.1.7",
@@ -512,19 +513,19 @@
         },
         {
           "file": ".nx/cache/d/daemon.log",
-          "hash": "8510396808674791991"
+          "hash": "6669157755700478228"
         },
         {
           "file": ".nx/cache/d/server-process.json",
-          "hash": "10387832931127283325"
+          "hash": "11473139151358939732"
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "9215073814731226371"
+          "hash": "8431890795847174051"
         },
         {
           "file": ".nx/cache/lockfile.hash",
-          "hash": "6795351059330605976"
+          "hash": "1989389167177198705"
         },
         {
           "file": ".nx/cache/nx-console-project-graph/project-graph.html",
@@ -564,11 +565,11 @@
         },
         {
           "file": ".nx/cache/parsed-lock-file.json",
-          "hash": "14377974953938345039"
+          "hash": "14954829438534778443"
         },
         {
           "file": ".nx/cache/project-graph.json",
-          "hash": "9240988931235990523"
+          "hash": "14309010504124086839"
         },
         {
           "file": ".nx/cache/run.json",
@@ -599,12 +600,24 @@
           "hash": "304286812350609988"
         },
         {
+          "file": ".nx/cache/terminalOutputs/6212991553458484024",
+          "hash": "14621504896406816264"
+        },
+        {
           "file": ".nx/cache/terminalOutputs/7138006743586702625",
           "hash": "4202294022579085085"
         },
         {
+          "file": ".nx/cache/terminalOutputs/8029038200977566513",
+          "hash": "8729427945945726336"
+        },
+        {
           "file": ".nx/cache/terminalOutputs/8347927600435206253",
           "hash": "4166923646921154460"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/9658999804484940799",
+          "hash": "1081053472170622955"
         },
         {
           "file": ".vscode/extensions.json",
@@ -727,11 +740,11 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "14417099881020947110"
+          "hash": "14891615115847473443"
         },
         {
           "file": "package.json",
-          "hash": "15735792258642230201",
+          "hash": "14658313759304721537",
           "deps": [
             "npm:@angular/animations",
             "npm:@angular/cdk",
@@ -750,6 +763,7 @@
             "npm:@sanity/image-url",
             "npm:angular-animations",
             "npm:moment",
+            "npm:ngx-highlightjs",
             "npm:ngx-skeleton-loader",
             "npm:rxjs",
             "npm:tailwind-scrollbar-hide",
@@ -818,14 +832,19 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "15039535621284968741",
+          "hash": "3821859637905407941",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/platform-browser",
             "npm:@angular/common",
             "npm:@angular/router",
             "npm:@angular/forms",
-            "npm:ngx-skeleton-loader"
+            "npm:ngx-skeleton-loader",
+            "npm:ngx-highlightjs",
+            [
+              "npm:highlight.js",
+              "dynamic"
+            ]
           ]
         },
         {
@@ -1121,7 +1140,7 @@
         },
         {
           "file": "src/app/sanity/portable-text.pipe.ts",
-          "hash": "10804420048922434321",
+          "hash": "6617601954750147016",
           "deps": [
             "npm:@angular/core",
             "npm:@portabletext/to-html",
@@ -1252,7 +1271,7 @@
         },
         {
           "file": "src/styles.css",
-          "hash": "4961548772975555508"
+          "hash": "7217805359700332179"
         },
         {
           "file": "tailwind.config.js",
@@ -1274,10 +1293,11 @@
           "hash": "5122839733245053999"
         },
         {
-          "file": ".nx/cache/terminalOutputs/6212991553458484024",
-          "hash": "14621504896406816264"
+          "file": ".nx/cache/terminalOutputs/1956531513008473876",
+          "hash": "3244421341483603138"
         }
       ]
     }
   }
 }
+ 
