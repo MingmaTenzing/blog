@@ -1,21 +1,21 @@
 {
   "run": {
-    "command": "nx build",
-    "startTime": "2025-08-20T03:26:50.772Z",
-    "endTime": "2025-08-20T03:27:01.902Z",
+    "command": "nx serve",
+    "startTime": "2025-09-05T01:52:12.426Z",
+    "endTime": "2025-09-05T02:47:00.599Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "blog:build:production",
-      "target": "build",
+      "taskId": "blog:serve:development",
+      "target": "serve",
       "projectName": "blog",
-      "hash": "3031238679097980678",
-      "startTime": "2025-08-20T03:26:50.774Z",
-      "endTime": "2025-08-20T03:27:01.901Z",
+      "hash": "428169203487684491",
+      "startTime": "2025-09-05T01:52:12.428Z",
+      "endTime": "2025-09-05T02:47:00.598Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 0
+      "status": 1
     }
   ]
 }

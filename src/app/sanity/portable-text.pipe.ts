@@ -9,7 +9,7 @@ import { PortableTextBlock } from '@portabletext/types';
 export class PortableTextPipe implements PipeTransform {
   constructor(private sanityImagePipe: SanityImagePipe) {}
 
-  components: PortableTextComponents = {
+  components = {
     types: {
       image: ({ value }: { value: string }) =>
         '<img loading="lazy" class="my-4 rounded-lg w-full h-[500px] object-cover  object-center" src="' +
