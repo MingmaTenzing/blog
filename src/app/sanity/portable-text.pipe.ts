@@ -15,8 +15,9 @@ export class PortableTextPipe implements PipeTransform {
         '<img loading="lazy" class="my-4 rounded-lg w-full h-[500px] object-cover  object-center" src="' +
         this.sanityImagePipe.transform(value, 900) +
         '"  />',
-      code: ({ value }: { value: any }) =>
-        `<blockquote class="my-4 border-l-4 pl-2 italic border-gray-400">${value.code}</blockquote>`,
+      code: ({ value }) => {
+        return `<pre> <code> ${value.code} </code> </pre>`;
+      },
     },
     marks: {},
     block: {

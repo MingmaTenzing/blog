@@ -2,17 +2,17 @@
   "version": "6.0",
   "nxVersion": "16.9.1",
   "deps": {
-    "@angular/animations": "^16.2.10",
-    "@angular/cdk": "^16.2.9",
-    "@angular/common": "^16.2.0",
-    "@angular/compiler": "^16.2.0",
-    "@angular/core": "^16.2.0",
-    "@angular/forms": "^16.2.0",
-    "@angular/material": "^16.2.9",
-    "@angular/platform-browser": "^16.2.0",
-    "@angular/platform-browser-dynamic": "^16.2.0",
-    "@angular/platform-server": "^16.2.0",
-    "@angular/router": "^16.2.0",
+    "@angular/animations": "20.2.4",
+    "@angular/cdk": "20.2.2",
+    "@angular/common": "20.2.4",
+    "@angular/compiler": "20.2.4",
+    "@angular/core": "20.2.4",
+    "@angular/forms": "20.2.4",
+    "@angular/material": "20.2.2",
+    "@angular/platform-browser": "20.2.4",
+    "@angular/platform-browser-dynamic": "20.2.4",
+    "@angular/platform-server": "20.2.4",
+    "@angular/router": "20.2.4",
     "@dimaslz/ng-heroicons": "^1.16.0",
     "@portabletext/to-html": "^2.0.5",
     "@sanity/client": "^6.7.0",
@@ -24,17 +24,17 @@
     "rxjs": "~7.8.0",
     "tailwind-scrollbar-hide": "^1.1.7",
     "tslib": "^2.3.0",
-    "zone.js": "~0.13.0",
-    "@angular-devkit/build-angular": "^16.2.4",
-    "@angular-devkit/core": "^16.2.4",
-    "@angular-devkit/schematics": "^16.2.4",
+    "zone.js": "0.15.1",
+    "@angular-devkit/build-angular": "20.2.2",
+    "@angular-devkit/core": "20.2.2",
+    "@angular-devkit/schematics": "20.2.2",
     "@angular/cli": "^16.2.4",
-    "@angular/compiler-cli": "^16.2.0",
-    "@nx/angular": "16.9.1",
-    "@nx/workspace": "16.9.1",
-    "@schematics/angular": "^16.2.4",
+    "@angular/compiler-cli": "20.2.4",
+    "@nx/angular": "21.5.1",
+    "@nx/workspace": "21.5.1",
+    "@schematics/angular": "20.2.2",
     "@types/jasmine": "~4.3.0",
-    "@types/node": "^16.11.7",
+    "@types/node": "18.16.9",
     "@types/progress-stream": "^2.0.3",
     "autoprefixer": "^10.4.16",
     "cypress": "^13.5.0",
@@ -44,8 +44,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "nx": "16.9.1",
-    "nx-cloud": "latest",
+    "nx": "21.5.1",
+    "nx-cloud": "19.1.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "typescript": "~5.1.3"
@@ -513,7 +513,7 @@
         },
         {
           "file": ".nx/cache/d/daemon.log",
-          "hash": "4981218364508267078"
+          "hash": "14696810936671184457"
         },
         {
           "file": ".nx/cache/d/server-process.json",
@@ -521,7 +521,7 @@
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "7419601402856201796"
+          "hash": "13911163064505753447"
         },
         {
           "file": ".nx/cache/lockfile.hash",
@@ -573,7 +573,7 @@
         },
         {
           "file": ".nx/cache/run.json",
-          "hash": "15146710726156596381"
+          "hash": "5794643447926519340"
         },
         {
           "file": ".nx/cache/terminalOutputs/1268958310212375925",
@@ -744,7 +744,7 @@
         },
         {
           "file": "package.json",
-          "hash": "14658313759304721537",
+          "hash": "17969715408559938890",
           "deps": [
             "npm:@angular/animations",
             "npm:@angular/cdk",
@@ -832,7 +832,7 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "3821859637905407941",
+          "hash": "12550837126417376625",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/platform-browser",
@@ -1140,7 +1140,7 @@
         },
         {
           "file": "src/app/sanity/portable-text.pipe.ts",
-          "hash": "6617601954750147016",
+          "hash": "4819149172765636903",
           "deps": [
             "npm:@angular/core",
             "npm:@portabletext/to-html",
@@ -1295,6 +1295,18 @@
         {
           "file": ".nx/cache/terminalOutputs/1956531513008473876",
           "hash": "3559756295473461773"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/1936935205923641050",
+          "hash": "3493062818185414225"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/1055106385832566207",
+          "hash": "12928415392075128948"
+        },
+        {
+          "file": "migrations.json",
+          "hash": "12472579447301223099"
         }
       ]
     }

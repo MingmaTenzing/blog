@@ -11,15 +11,14 @@ import { HomeModule } from './home/home.module';
 import { FormsModule } from '@angular/forms';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { provideHighlightOptions } from 'ngx-highlightjs';
+// import { provideHighlightOptions } from 'ngx-highlightjs';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     NavModule,
-    BrowserAnimationsModule,
     HeaderModule,
     NgxSkeletonLoaderModule,
-    HttpClientModule,
     AppRoutingModule,
     BrowserModule,
     RouterModule,

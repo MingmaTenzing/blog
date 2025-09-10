@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx serve",
-    "startTime": "2025-09-02T07:12:50.656Z",
-    "endTime": "2025-09-02T07:43:30.503Z",
+    "startTime": "2025-09-09T04:27:38.396Z",
+    "endTime": "2025-09-09T04:48:39.364Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "blog:serve:development",
       "target": "serve",
       "projectName": "blog",
-      "hash": "6212991553458484024",
-      "startTime": "2025-09-02T07:12:50.660Z",
-      "endTime": "2025-09-02T07:43:30.502Z",
+      "hash": "1956531513008473876",
+      "startTime": "2025-09-09T04:27:38.401Z",
+      "endTime": "2025-09-09T04:48:39.363Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1
